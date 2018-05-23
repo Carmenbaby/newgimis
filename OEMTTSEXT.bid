@@ -1,0 +1,6 @@
+#ifndef OEMGPSEXT_BID
+#define OEMGPSEXT_BID
+
+#define AEECLSID_OEMTTSEXT        0x01007331
+
+#endif //OEMGPSEXT_BID

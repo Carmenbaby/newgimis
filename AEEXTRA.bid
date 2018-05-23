@@ -1,0 +1,7 @@
+#ifndef IXTRA_BID
+#define IXTRA_BID
+
+#define AEECLSID_XTRA    	0x0104326c
+
+#endif //IXTRA_BID
+

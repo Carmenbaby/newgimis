@@ -1,0 +1,6 @@
+#ifndef IQDKCALL_BID
+#define IQDKCALL_BID
+
+#define AEECLSID_IQDKCALL    	0x01047007
+
+#endif //IQDKCALL_BID

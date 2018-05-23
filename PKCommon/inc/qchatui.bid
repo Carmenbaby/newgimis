@@ -1,0 +1,6 @@
+#ifndef QCHATUI_BID
+#define QCHATUI_BID
+
+#define AEECLSID_QCHATUI        0x010070FE
+
+#endif //QCHATUI_BID

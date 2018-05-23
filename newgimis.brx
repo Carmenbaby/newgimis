@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="newgimis" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1" Name="IDS_OPENGPS">
+		<Text>开启GPS</Text>
+	</String>
+	<String Id="2" Name="IDS_CLOSEGPS">
+		<Text>关闭GPS</Text>
+	</String>
+	<String Id="3" Name="IDS_SEECONFIG">
+		<Text>查看配置</Text>
+	</String>
+	<String Id="4" Name="IDS_GIMISTITLE">
+		<Text>GMIS功能选择</Text>
+	</String>
+	<String Id="5" Name="IDS_SEND_EMPUT">
+		<Text>发送空车</Text>
+	</String>
+	<String Id="6" Name="IDS_SEND_FULL">
+		<Text>发送重车</Text>
+	</String>
+	<String Id="7" Name="IDS_YJKQ">
+		<Text>一键考勤</Text>
+	</String>
+	<String Id="9" Name="IDS_NO_MEDIA">
+		<Text>您还没有下载相关文件！</Text>
+	</String>
+	<String Id="10" Name="IDS_DOWNLOAD_OK">
+		<Text>已经下载成功!</Text>
+	</String>
+	<String Id="11" Name="IDS_WEBS_CANCELLED">
+		<Text>*已经取消...</Text>
+	</String>
+	<String Id="12" Name="IDS_WEBS_GETHOSTBYNAME">
+		<Text>**正在查找主机...</Text>
+	</String>
+	<String Id="13" Name="IDS_WEBS_CONNECT">
+		<Text>***正在连接...</Text>
+	</String>
+	<String Id="14" Name="IDS_WEBS_SENDREQUEST">
+		<Text>****发送请求中...</Text>
+	</String>
+	<String Id="15" Name="IDS_WEBS_READRESPONSE">
+		<Text>***接收请求中...</Text>
+	</String>
+	<String Id="16" Name="IDS_WEBS_GOTREDIRECT">
+		<Text>**重定向中...</Text>
+	</String>
+	<String Id="17" Name="IDS_WEBS_CACHEHIT">
+		<Text>*缓存中...</Text>
+	</String>
+	<String Id="21" Name="IDS_MEDIA_PIC">
+		<Text>媒体图片</Text>
+	</String>
+	<String Id="22" Name="IDS_MEDIA_MUSIC">
+		<Text>媒体音乐</Text>
+	</String>
+	<String Id="23" Name="IDS_SEND_PHOTO">
+		<Text>发送照片</Text>
+	</String>
+	<String Id="24" Name="IDS_SEND_AUDIO">
+		<Text>发送视频</Text>
+	</String>
+	<String Id="25" Name="IDS_TASKLIST">
+		<Text>任务列表</Text>
+	</String>
+	<String Id="26" Name="IDS_NFC">
+		<Text>NFC刷卡</Text>
+	</String>
+	<String Id="27" Name="IDS_SEND_CONFIG">
+		<Text>发送配置文件</Text>
+	</String>
+	<String Id="28" Name="IDS_SEND_LOG">
+		<Text>发送日志</Text>
+	</String>
+	<String Id="29" Name="IDS_BACK">
+		<Text>返回</Text>
+	</String>
+	<String Id="30" Name="IDS_SEND">
+		<Text>发送</Text>
+	</String>
+	<String Id="31" Name="IDS_FRONT_PIC">
+		<Text>上一张</Text>
+	</String>
+	<String Id="32" Name="IDS_NEXT_PIC">
+		<Text>下一张</Text>
+	</String>
+	<String Id="33" Name="IDS_AUDIO_FILE">
+		<Text>视频文件</Text>
+	</String>
+	<String Id="34" Name="IDS_LOOK_GPS">
+		<Text>查看GPS</Text>
+	</String>
+	<String Id="35" Name="IDS_MORE">
+		<Text>更多</Text>
+	</String>
+	<String Id="36" Name="IDS_LOCAL_INFO">
+		<Text>本机信息</Text>
+	</String>
+	<String Id="37" Name="IDS_SPEAK_MANAGER">
+		<Text>语音管理</Text>
+	</String>
+	<String Id="38" Name="IDS_FS_ZT_0">
+		<Text>发送状态0</Text>
+	</String>
+	<String Id="39" Name="IDS_FS_ZT_1">
+		<Text>发送状态1</Text>
+	</String>
+	<String Id="40" Name="IDS_FINISH">
+		<Text>完成</Text>
+	</String>
+	<String Id="41" Name="IDS_FORWARD_DATA">
+		<Text>一键打卡</Text>
+	</String>
+	<String Id="42" Name="IDS_LONGSMS_TITILE">
+		<Text>              短信收件箱</Text>
+	</String>
+	<String Id="43" Name="IDS_OPEN">
+		<Text>查看</Text>
+	</String>
+	<String Id="44" Name="IDS_SMS_CONTENT">
+		<Text>短信内容</Text>
+	</String>
+	<String Id="45" Name="IDS_LONGSMS_NOTIFY">
+		<Text>查看短信</Text>
+	</String>
+	<String Id="46" Name="IDS_LONGSMS">
+		<Text>短信收件箱</Text>
+	</String>
+	<String Id="47" Name="IDS_LONGSMS_TITLE_1">
+		<Text>您有新的信息请查收！</Text>
+	</String>
+	<String Id="48" Name="IDS_LONGSMS_TITLE_2">
+		<Text>操作提示：</Text>
+	</String>
+	<String Id="49" Name="IDS_LONGSMS_TITLE_3">
+		<Text>1、按[中间键]查看信息。</Text>
+	</String>
+	<String Id="50" Name="IDS_LONGSMS_TITLE_4">
+		<Text>2、若此界面退出，可在主</Text>
+	</String>
+	<String Id="51" Name="IDS_LONGSMS_TITLE_5">
+		<Text>界面长按[0]键进入收件箱</Text>
+	</String>
+	<String Id="52" Name="IDS_LONGSMS_TITLE_6">
+		<Text>查看更多短信。</Text>
+	</String>
+	<String Id="100" Name="IDS_UNKNOWN">
+		<Text>未知错误！</Text>
+	</String>
+	<String Id="101" Name="IDS_NETSTATUSERR">
+		<Text>异常</Text>
+	</String>
+	<String Id="102" Name="IDS_NETSTATUSNAL">
+		<Text>正常</Text>
+	</String>
+	<String Id="1001" Name="IDS_TASK_02">
+		<Text>反馈项:</Text>
+	</String>
+	<String Id="1002" Name="IDS_TASK_BZ">
+		<Text>备注:</Text>
+	</String>
+	<String Id="1003" Name="IDS_STRING_FK">
+		<Text>反馈</Text>
+	</String>
+	<String Id="1004" Name="ITEXT_TITLE">
+		<Text>照片内容</Text>
+	</String>
+	<String Id="1005" Name="IMENU_WRITE">
+		<Text>发送</Text>
+	</String>
+	<String Id="1006" Name="IMENU_RIGHT">
+		<Text>下一张</Text>
+	</String>
+	<String Id="1007" Name="IMENU_LEFT">
+		<Text>上一张</Text>
+	</String>
+	<String Id="1008" Name="IMENU_DEL">
+		<Text>删除</Text>
+	</String>
+	<String Id="1009" Name="IMENU_RTN">
+		<Text>返回</Text>
+	</String>
+	<String Id="1010" Name="IDS_INPUT">
+		<Text>输入</Text>
+	</String>
+	<String Id="1011" Name="IDS_TM_PINYIN">
+		<Text>拼音</Text>
+	</String>
+	<String Id="1012" Name="IDS_TM_STROKE">
+		<Text>笔画</Text>
+	</String>
+	<String Id="1013" Name="IDS_TM_NUMBER">
+		<Text>123</Text>
+	</String>
+	<String Id="1014" Name="IDS_TM_LETTERS">
+		<Text>abc</Text>
+	</String>
+	<String Id="1015" Name="IDS_TM_SYMBOLS">
+		<Text>符号</Text>
+	</String>
+	<String Id="1016" Name="IDS_TM_ENGLISH">
+		<Text>ABC</Text>
+	</String>
+	<String Id="1017" Name="IDS_MORE_HAVE_TASK">
+		<Text>更多</Text>
+	</String>
+	<String Id="1018" Name="IDS_TASK_BEGIN">
+		<Text>开始任务</Text>
+	</String>
+	<String Id="1019" Name="IDS_TASK_DELEY">
+		<Text>稍后开始</Text>
+	</String>
+	<String Id="1020" Name="IDS_TASK_NEW">
+		<Text>收到新任务</Text>
+	</String>
+	<String Id="1021" Name="IDS_NO_TASKLIST">
+		<Text>任务列表</Text>
+	</String>
+	<String Id="1022" Name="IDS_TASK_CONTENT">
+		<Text>Content:</Text>
+	</String>
+	<String Id="1023" Name="IDS_TASK_IN">
+		<Text>点击显示内容</Text>
+	</String>
+	<String Id="1024" Name="IDS_TASK_CHINAESE">
+		<Text>任务内容</Text>
+	</String>
+</Strings>
+<Objects MimeType="image/bmp">
+	<Object Id="5001" Name="IDB_HAVE_TASK">
+		<File>..\..\..\brewsdk\sdk\bitmaps\image-8.bmp</File>
+	</Object>
+</Objects>
+</BREWRes>

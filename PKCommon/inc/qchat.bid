@@ -1,0 +1,6 @@
+#ifndef QCHAT_BID
+#define QCHAT_BID
+
+#define AEECLSID_QCHAT    	0x01012b39
+
+#endif //QCHAT_BID

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="newgimis" VERSION="1">
+<BREWMif>
+	<Module Encoding="S-JIS">
+		<Privileges>
+			<Privilege Level="File"/>
+			<Privilege Level="Network"/>
+			<Privilege Level="Tapi"/>
+			<Privilege Level="Download"/>
+			<Privilege Level="Web"/>
+			<Privilege Level="WriteShared"/>
+			<Privilege Level="PositionLocation"/>
+			<Privilege Level="WriteRinger"/>
+			<Privilege Level="AddressBook"/>
+			<Privilege Level="SectorInfo"/>
+			<Privilege Level="System"/>
+		</Privileges>
+		<Exported/>
+		<MimeTypes/>
+		<Imported/>
+		<ACLs>
+			<ACL Type="fs"/>
+		</ACLs>
+	</Module>
+	<Applets>
+		<Applet BaseId="20" CLSID="0x0111ab91">
+			<!--Name = IDS_STRING_20-->
+			<Type>Tools</Type>
+			<Applethost>0x00000000</Applethost>
+			<Flags>
+				<Flag Value="Phone"/>
+			</Flags>
+			<Environment/>
+			<Notifications>
+				<Notification Notifier="AEECLSID_SHELL" Mask="NMASK_SHELL_INIT"/>
+			</Notifications>
+		</Applet>
+	</Applets>
+</BREWMif>
+<Strings Encoding="S-JIS">
+	<String Id="20" Name="IDS_STRING_20">
+		<Text>gimis</Text>
+	</String>
+</Strings>
+</BREWRes>

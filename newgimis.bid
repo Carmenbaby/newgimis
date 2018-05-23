@@ -1,0 +1,6 @@
+#ifndef NEWGIMIS_BID
+#define NEWGIMIS_BID
+
+#define AEECLSID_NEWGIMIS        0x0111AB91
+
+#endif //NEWGIMIS_BID

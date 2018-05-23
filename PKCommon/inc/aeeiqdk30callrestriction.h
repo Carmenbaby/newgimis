@@ -1,0 +1,443 @@
+#ifndef AEEQDK30CALLRESTRICTION_H
+#define AEEQDK30CALLRESTRICTION_H
+/*=============================================================================
+ 
+FILE: AEEQDK30CallRestriction.h
+
+SERVICES: The IQDK30CallRestriction interface manages all the methods related to 
+Call Restriction features of QChat.
+
+GENERAL DESCRIPTION:
+
+PUBLIC CLASSES AND STATIC FUNCTIONS:
+   IQDK30CallRestriction
+
+        Copyright © 2005 QUALCOMM Incorporated.
+               All Rights Reserved.
+            QUALCOMM Proprietary
+
+=============================================================================*/
+/*=============================================================================
+                     INCLUDE FILES FOR MODULE
+=============================================================================*/
+#include "AEE.h"
+#include "AEEIQDKCallRestriction.h"
+#include "AEEQDK30DataTypes.h"
+//#include "AEEIQDKCallRestriction.bid"	
+
+/*=============================================================================
+                    CLASS DEFINITIONS
+=============================================================================*/
+#define AEEIID_IQDK30CALLRESTRICTION 0x01075025
+
+typedef struct IQDK30CallRestriction IQDK30CallRestriction;
+
+
+#define INHERIT_IQDKCallRestriction(iname)\
+   INHERIT_IQueryInterface(iname);\
+   IQDK_ErrorType (*Init)(iname *po,AEECLSID appClsID);\
+   IQDK_ErrorType (*SetByIndex)(iname *po,IQDK_CallRestrictionEntry * entry, uint32 callRestrictionIndex);\
+   IQDK_ErrorType (*RemoveByIndex)(iname *po, uint32 callRestrictionIndex);\
+   IQDK_ErrorType (*GetCount)(iname *po, uint32* pSize);\
+   IQDK_ErrorType (*GetByIndex)(iname *po, IQDK_CallRestrictionEntry *pRestriction, uint32 callRestrictionIndex);\
+   IQDK_ErrorType (*IsRestricted)(iname *po, IQDK_CallRestrictionDirection direction,  IQDK_ServicesEnum service, IQDKAddressData *pAddress, boolean *restricted)
+
+#define INHERIT_IQDK30CallRestriction(iname)\
+   INHERIT_IQDKCallRestriction(IQDK30CallRestriction);\
+   IQDK_ErrorType (*Qdk30SetByIndex)(iname *po,IQDK30_CallRestrictionEntry * entry, uint32 callRestrictionIndex);\
+   IQDK_ErrorType (*Qdk30GetByIndex)(iname *po, IQDK30_CallRestrictionEntry *pRestriction, uint32 callRestrictionIndex)
+
+AEEINTERFACE(IQDK30CallRestriction)
+{
+   INHERIT_IQDK30CallRestriction(IQDK30CallRestriction);
+};
+
+#define IQDK30CALLRESTRICTION_AddRef(p)                   AEEGETPVTBL((p),IQDK30CallRestriction)->AddRef((p))
+#define IQDK30CALLRESTRICTION_Release(p)                  AEEGETPVTBL((p),IQDK30CallRestriction)->Release((p))
+#define IQDK30CALLRESTRICTION_QueryInterface(p,clsid,pp)  AEEGETPVTBL((p),IQDK30CallRestriction)->QueryInterface((p),(clsid),(pp))
+#define IQDK30CALLRESTRICTION_SetByIndex(p,entry, id)     AEEGETPVTBL((p),IQDK30CallRestriction)->Qdk30SetByIndex((p),(entry),(id))
+#define IQDK30CALLRESTRICTION_RemoveByIndex(p,id)         AEEGETPVTBL((p),IQDK30CallRestriction)->RemoveByIndex((p),(id))
+#define IQDK30CALLRESTRICTION_GetCount(p, size)           AEEGETPVTBL((p),IQDK30CallRestriction)->GetCount((p), (size))
+#define IQDK30CALLRESTRICTION_GetByIndex(p,res,id)        AEEGETPVTBL((p),IQDK30CallRestriction)->Qdk30GetByIndex((p),(res),(id))
+#define IQDK30CALLRESTRICTION_Init(p,clsid)               AEEGETPVTBL((p),IQDK30CallRestriction)->Init((p),(clsid))
+#define IQDK30CALLRESTRICTION_IsRestricted(p,dir,svc,a,r) AEEGETPVTBL((p),IQDK30CallRestriction)->IsRestricted((p),(dir),(svc),(a),(r))
+
+/*=====================================================================
+  DATA STRUCTURE DOCUMENTATION
+=======================================================================
+=====================================================================
+
+=======================================================================
+=======================================================================
+  INTERFACES   DOCUMENTATION
+=======================================================================
+
+Interface Name: IQDK30CallRestriction
+
+Description:
+    IQDK30CallRestriction interface provides a set of API methods that are 
+intended to be used by applications that will be using the Call Restriction
+features of QChat. 
+
+    The QChat System design includes a mechanism that allows the user or the 
+carrier to restrict inbound or outbound QChat traffic via an ordered list of 
+entries. Each entry in the list specifies whether the user is permitted to 
+communicate with the party specified in the restriction or whether 
+the user is denied communication with the party specified in the restriction. The
+Compilation of these lists and their applications together are referred to as
+QChat Call Restrictions.
+
+   Each call restriction is expressed by direction, type, services, and a token
+against which QChat addresses will be matched.  For example, an application
+might choose to define a restriction that would prevent the user from making a
+direct call to other users in a specific domain.  This would be an outbound,
+deny, direct calls, restriction against a particular addressing domain.
+Similarly, a restriction could be defined to always accept incoming group calls
+from a specific addresses - regardless of any other user level restrictions that
+may have been established.  This would be an inbound, always allow, group calls,
+carrier level restriction for a specific user address.
+  
+
+            type:	IQDK_ALLOW, IQDK_DENY, IQDK_ALWAYS_ALLOW
+            direction: IQDK_INBOUND, IQDK_OUTBOUND, IQDK_INBOUND_AND_OUTBOUND
+            service:	represented by 4 hex digits
+                     These four hex digits represent 16 bits, one bit per service.
+                     Starting from the least significant bit, each bit represents the
+                     following services in order: 
+                     Alerts, Direct Calls, Group Calls, Ad Hoc calls, Chatroom Calls, 
+                     PresenceOnDemand
+                     The remaining bits shall be used for future services and are 
+                     currently don't cares.
+                     For example: 0001 represents Alerts only
+                                  0003 represents Alerts and Direct Calls)
+            token: A token is matched against a QChat address. '*' represents a wildcard
+
+  
+
+The IQDK30CallRestriction interface instance is obtained via ISHELL_CreateInstance()
+mechanism.
+
+The following header file is required:~
+AEEQDKCallRestrictions.h
+
+=============================================================================
+
+IQDK30CALLRESTRICTION_AddRef()
+
+Description:
+   This method increments the reference count of the IQDK30CallRestriction Interface object.
+   This allows the object to be shared by multiple callers. The object is freed when
+   the reference count reaches 0 (zero).
+
+Prototype:
+   uint32 IQDK30CALLRESTRICTION_AddRef(IQDK30CallRestriction * po)
+
+Parameters:
+   po : Pointer to the IQDK30CallRestriction Interface object
+
+Return Value:
+   Incremented reference count for the object
+
+Comments:
+   A valid object returns a positive reference count.
+
+Version:
+   Introduced in QDK v 3.0
+
+Side Effects:
+   None
+
+See Also:
+   IQDK30CALLRESTRICTION_Release()
+
+=============================================================================
+
+IQDK30CALLRESTRICTION_Release()
+
+Description:
+   This method decrements the reference count of an object. The object is freed
+   from memory and is no longer valid once the reference count reaches 0 (zero).
+
+Prototype:
+   uint32 IQDK30CALLRESTRICTION_Release(IQDK30CallRestriction * po)
+
+Parameters:
+   po : Pointer to the IQDK30CallRestriction Interface object
+
+Return Value:
+   Decremented reference count for the object. The object has been freed and is no
+   longer valid if 0 (zero) is returned.
+
+Comments:
+   None
+
+Version:
+   Introduced in QDK v 3.0
+
+Side Effects:
+   None
+
+See Also:
+   IQDK30CALLRESTRICTION_AddRef()
+
+==============================================================================
+
+IQDK30CALLRESTRICTION_QueryInterface()
+
+Description:
+   This method retrieves a pointer to an interface conforming to the
+   definition of the specified class ID.  This can be used to query for
+   extended functionality, like future versions or proprietary extensions.
+
+   Upon a successful query, the interace is returned AddRef'ed.  The caller is
+   responsible for calling Release() at some point in the future.  One
+   exception is when the pointer returned is not an interface pointer.  In
+   that case, the memory will share the lifetime of the object being queried,
+   and the returned pointer will not be used to free or release the object.
+
+Prototype:
+   int IQDK30CALLRESTRICTION_QueryInterface(IQDK30CallRestriction *po, AEECLSID id, void **p)
+
+Parameters:
+   po : Pointer to IQDK30CallRestriction interface
+   id : A globally unique id to identify the entity (interface or data) that we
+           are trying to query.
+   p  : Pointer to the data or interface that we want to retrieve.  If the interface
+           is not available, this is set to NULL.
+
+Return Value:
+   SUCCESS          : success,
+   ECLASSNOTSUPPORT : if class ID not supported
+
+Comments:
+   On failure, QueryInterface() must set *p to NULL.
+
+Version:
+   Introduced in QDK v 3.0
+
+Side Effects:
+   None
+
+See Also:
+   None
+
+=============================================================================
+IQDK30CALLRESTRICTION_Init()
+
+Description:
+   This function must be the first API that is called by the QDK application that
+   instantiates an object of this interface. This function gives the QChat Client
+   a chance to intialize variables for this interface.
+
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_Init(IQDK30CallRestriction *po, AEECLSID appClsID)
+
+Parameters:
+   po       : Pointer to the IQDK30CallRestriction Interface object.
+   appClsId : Class ID of the QDK application that is calling this API.
+
+Return Value:
+   SUCCESS   : The interface has been successfully initiated
+   EFAILED   : Unknown failure
+   EBADCLASS : The po pointer is NULL 
+
+Version:
+   Introduced in QDK v 3.0
+
+================================================================================
+
+Function: IQDK30CALLRESTRICTION_RemoveByIndex()
+                  
+Description:
+   This function removes an existing user-level QChat call restriction from
+   the ordered list of call restrictions at the index provided.
+   
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_RemoveByIndex
+   (
+      IQDK30CallRestriction *po,
+      uint32               callRestrictionIndex);
+   )
+   
+Parameters:
+   po                   : Pointer to the IQDK30CallRestriction Interface object.
+   callRestrictionIndex : index of the restriction to be removed
+
+Return Value:
+   SUCCESS   : The call restriction was successfully removed.
+   EBADCLASS : The po pointer is NULL
+   EQDKNOTINITIALIZED : IQDK30CALLRESTRICTION_Init() was not called first
+	EQDKOUTOFRANGE: invalid call restriction index
+	EQDKRESTRICTIONCONFLICT : if the user tries to remove a carrier level call restriction
+  
+Comments:
+   None.
+
+Version:
+   Introduced in QDK v 3.0
+       
+See Also:
+   IQDK30CALLRESTRICTION_Init()
+   IQDK30CALLRESTRICTION_SetByIndex()
+
+=====================================================================
+Function: IQDK30CALLRESTRICTION_SetByIndex()
+                     
+Description:
+   This function adds user-level QChat call restrictions to the end of
+   the ordered list of call restrictions enforced by the QChat Client.
+                      
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_SetByIndex
+   (
+      IQDK30CallRestriction       *po,
+      IQDK_CallRestrictionEntry *entry,
+      uint32 callRestrictionIndex
+   )
+                        
+Parameters:
+   po    : Pointer to the IQDK30CallRestriction Interface object.
+   entry : Pointer to an IQDK_CallRestrictionEntry data structure containing
+      the addresses against which the QChat Client will add the call
+      restriction.  
+   callRestrictionIndex : This is an index into the Call Restriction table 
+      pointing to a particular Call Restriction. 
+
+Return Value:
+   SUCCESS      : The restriction was successfully added to the end of the list
+   EBADCLASS    : The po pointer is NULL
+   EBADPARM     : entry pointer is NULL
+   EQDKRESTRICTIONCONFLICT   : If the user tries to set a carrier level call restriction
+   EQDKRESTRICTIONNOTALLOWED : The restriction could not be added because
+      user-level and "allow always" restrictions cannot be set.
+   EQDKNOTINITIALIZED : IQDK30CALLRESTRICTION_Init() was not called first
+   
+Comments:
+   New restrictions are always added to the end of the restriction list.
+   To insert a restriction in the middle of the list, the calling
+   application would need to retrieve and store the entire list, remove
+   each entry, then add back each stored restriction, inserting the new
+   restriction at the proper location in the list. This is required and its 
+   important to have call restrictions in right required order; since if 
+   there are two call restrictions in a list, the one comes later in restriction 
+   list will always be considered than old one. The maximum number of call restrictions
+   allowed is 100.
+                                                 
+Version:
+   Introduced in QDK v 3.0
+
+See Also:
+   IQDK30CALLRESTRICTION_RemoveByIndex()
+   IQDK30CALLRESTRICTION_GetCount()
+   IQDK30CALLRESTRICTION_GetByIndex()
+
+=====================================================================
+Function: IQDK30CALLRESTRICTION_GetCount()
+
+Description:
+   This function allows applications to get a total count of all the 
+   user level and carrier level call restrictions defined in the QChat Client. 
+   The maximum count can be returned for call restrictions is 100 (max user 
+   level restriction = 80, and max carrier level restriction = 20).  This 
+   value will typically be used in IQDK30CALLRESTRICTION_GetByIndex().
+                                                                                                                              
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_GetCount
+   (
+      IQDK30CallRestriction *po,
+      uint32              *pSize
+   )
+                                                                                                                              
+Parameters:
+   po    : Pointer to the IQDK30CallRestriction Interface object.
+   pSize : Pointer to a type where the count of the type will be stored.
+                                                                                                                              
+Return Value:
+   SUCCESS   : The number of restrictions was set in pSize param
+   EBADCLASS : The po pointer is NULL
+   EBADPARM  : pSize pointer is NULL
+   EQDKNOTINITIALIZED : IQDK30CALLRESTRICTION_Init() was not called first
+
+Version:
+   Introduced in QDK v 3.0
+
+See Also:
+   IQDK30CALLRESTRICTION_GetByIndex()
+
+=====================================================================
+Function: IQDK30CALLRESTRICTION_GetByIndex()
+
+Description:
+   This function allows applications to get a particular restriction
+   from the list of call restrictions defined in the QChat Client.
+         
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_GetByIndex
+   (
+      IQDK30CallRestriction       *po,
+      IQDK_CallRestrictionEntry *pRestriction,
+      uint32                     callRestrictionIndex
+   )
+                                              
+Parameters:
+   po                   : Pointer to the IQDK30CallRestriction Interface object.
+   pRestriction         : Pointer to an IQDK_CallRestrictionEntry, into
+      which the QChat Client will copy the data for a restriction.
+   callRestrictionIndex : This is an index into the Call Restriction table 
+      pointing to a particular Call Restriction. 
+
+Return Value:
+
+   SUCCESS   : The restriction at specified index was copied into pRestriction
+   EBADCLASS : The po pointer is NULL 
+   EBADPARM  : pRestriction pointer is NULL
+	EQDKOUTOFRANGE : invalid call restriction index.
+   EQDKNOTINITIALIZED : IQDK30CALLRESTRICTION_Init() was not called first
+
+Version:
+   Introduced in QDK v 3.0
+
+See Also:
+   IQDK30CALLRESTRICTION_GetCount()
+
+=====================================================================
+Function: IQDK30CALLRESTRICTION_IsRestricted()
+
+Description:
+   This function allows applications to find Whether or not an address 
+   is restricted from a particular service in the specified direction.
+         
+Prototype:
+   IQDK_ErrorType IQDK30CALLRESTRICTION_IsRestricted
+   (
+      IQDK30CallRestriction           *po,
+      IQDK_CallRestrictionDirection direction, 
+      IQDK_ServicesEnum             service,
+      IQDKAddressData               *pAddress,
+      boolean                       *restricted
+   )
+                                              
+Parameters:
+   po                   : Pointer to the IQDK30CallRestriction Interface object.
+   direction            : inbound or outboud but not both
+   service              : The type of service
+   pAddress             : The address on which a check for restrictions should be performed
+   restricted           : Stores whether or not pAddress is restricted to
+                          use service in the specified direction.
+
+Return Value:
+
+   SUCCESS   : restricted holds a valid value
+   EBADCLASS : The po pointer is NULL
+   EBADPARM  : One or more parameters are invalid
+   EQDKNOTINITIALIZED : IQDK30CALLRESTRICTION_Init() was not called first
+
+
+Version:
+   Introduced in QDK v 3.0
+
+See Also:
+
+=====================================================================
+*/
+#endif // AEEQDK30CALLRESTRICTION_H

@@ -1,0 +1,512 @@
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+---------------------------------------------------------------
+OBJECT AEEAppGen.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o AEEAppGen.o C:\brewsdk\sdk\src\AEEAppGen.c
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT AEEModGen.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o AEEModGen.o C:\brewsdk\sdk\src\AEEModGen.c
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_Addr.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_Addr.o gm_Addr.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_Addr.c", line 550: Warning: C2905E: implicit cast (to 'unsigned short') overflow
+"gm_Addr.c", line 1148: Warning: C2870W: variable 'nErr' declared but not used
+"gm_Addr.c", line 1248: Warning: C2870W: variable 'nErr' declared but not used
+"gm_Addr.c", line 1340: Warning: C2870W: variable 'nErr' declared but not used
+"gm_Addr.c", line 1710: Warning: C2870W: variable 'i' declared but not used
+"gm_Addr.c", line 1782: Warning: C2870W: variable 'pAddrField' declared but not used
+"gm_Addr.c", line 1782: Warning: C2870W: variable 'nRecId' declared but not used
+"gm_Addr.c", line 1836: Warning: C2870W: variable 'pAddrField' declared but not used
+"gm_Addr.c", line 1836: Warning: C2870W: variable 'nRecId' declared but not used
+"gm_Addr.c", line 1954: Warning: C2870W: variable 'nRecId' declared but not used
+"gm_Addr.c", line 1954: Warning: C2870W: variable 'nAddrCat' declared but not used
+"gm_Addr.c", line 2072: Warning: C2870W: variable 'nRecId' declared but not used
+"gm_Addr.c", line 2072: Warning: C2870W: variable 'nAddrCat' declared but not used
+"gm_Addr.c", line 2189: Warning: C2870W: variable 'nRecId' declared but not used
+"gm_Addr.c", line 2189: Warning: C2870W: variable 'nAddrCat' declared but not used
+"gm_Addr.c", line 2346: Warning: C2870W: variable 'si_Ret' declared but not used
+"gm_Addr.c", line 2346: Warning: C2870W: variable 'sc_End1' declared but not used
+"gm_Addr.c", line 2346: Warning: C2870W: variable 'sc_End' declared but not used
+"gm_Addr.c", line 2487: Warning: C2870W: variable 'sc_End1' declared but not used
+"gm_Addr.c", line 2487: Warning: C2870W: variable 'sc_End' declared but not used
+"gm_Addr.c", line 2645: Warning: C2870W: variable 'si_Ret' declared but not used
+"gm_Addr.c", line 2645: Warning: C2870W: variable 'sc_End1' declared but not used
+"gm_Addr.c", line 2645: Warning: C2870W: variable 'sc_End' declared but not used
+"gm_Addr.c", line 178: Warning: C2874W: 'me' may be used before being set
+"gm_Addr.c", line 2646: Warning: C2871W: static 'do_PhoneNumber_01' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'do_PhoneNumber' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'do_PhoneNumber_03' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Addr_Find_Number_03' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Addr_Find_Number_01' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Addr_EnumRecInfo' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Addr_EnumCategory' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_Addr.c", line 2646: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_Addr.c: 41 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_FileUpload.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_FileUpload.o gm_FileUpload.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_FileUpload.c", line 453: Warning: C2870W: variable 'pMe' declared but not used
+"gm_FileUpload.c", line 462: Warning: C2897W: odd unsigned comparison with 0: '<='
+"gm_FileUpload.c", line 73: Warning: C2874W: 'me' may be used before being set
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'FleUpd_GetVideo' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_FileUpload.c", line 1497: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_FileUpload.c: 14 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_photo.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_photo.o gm_photo.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_photo.c", line 391: Warning: C2897W: odd unsigned comparison with 0: '<='
+"gm_photo.c", line 1634: Warning: C2870W: variable 'iCurImg' declared but not used
+"gm_photo.c", line 2120: Warning: C2870W: variable 'iCurImg' declared but not used
+"gm_photo.c", line 2192: Warning: C2809W: character sequence /* inside comment
+"gm_photo.c", line 2541: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_photo.c", line 2541: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_photo.c: 14 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_Qchat.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_Qchat.o gm_Qchat.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_Qchat.c", line 244: Warning: C2874W: 'me' may be used before being set
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_Qchat.c", line 2888: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_Qchat.c: 11 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_record.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_record.o gm_record.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_record.c", line 229: Warning: C2870W: variable 'lStr_Log' declared but not used
+"gm_record.c", line 229: Warning: C2870W: variable 'strRoot' declared but not used
+"gm_record.c", line 381: Warning: C2870W: variable 'lStr_Log' declared but not used
+"gm_record.c", line 381: Warning: C2870W: variable 'strRoot' declared but not used
+"gm_record.c", line 545: Warning: C2870W: variable 'lStr_Log' declared but not used
+"gm_record.c", line 545: Warning: C2870W: variable 'strDateTime' declared but not used
+"gm_record.c", line 545: Warning: C2870W: variable 'ret' declared but not used
+"gm_record.c", line 947: Warning: C2870W: variable 'szFailure' declared but not used
+"gm_record.c", line 947: Warning: C2870W: variable 'szText' declared but not used
+"gm_record.c", line 53: Warning: C2874W: 'me' may be used before being set
+"gm_record.c", line 1299: Warning: C2871W: static 'Record_Page' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_record.c", line 1299: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_record.c: 21 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_sms.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_sms.o gm_sms.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_sms.c", line 345: Warning: C2870W: variable 'nLen' declared but not used
+"gm_sms.c", line 524: Warning: C2870W: variable 'nItemCount' declared but not used
+"gm_sms.c", line 524: Warning: C2870W: variable 'nMsgCount' declared but not used
+"gm_sms.c", line 674: Warning: C2870W: variable 'titleBuf' declared but not used
+"gm_sms.c", line 674: Warning: C2870W: variable 'aeContent_len' declared but not used
+"gm_sms.c", line 674: Warning: C2870W: variable 'aeContent' declared but not used
+"gm_sms.c", line 792: Warning: C2870W: variable 'nErr' declared but not used
+"gm_sms.c", line 928: Warning: C2870W: variable 'pTempFile' declared but not used
+"gm_sms.c", line 980: Warning: C2870W: variable 'fiInfo' declared but not used
+"gm_sms.c", line 1038: Warning: C2917W: no side effect in void context: 'i'
+"gm_sms.c", line 1044: Warning: C2207W: inventing 'extern int MP_AddMenuItemEx();'
+"gm_sms.c", line 1300: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_sms.c", line 1318: Warning: C2211W: non-value return in non-void function
+"gm_sms.c", line 1565: Warning: C2207W: inventing 'extern int Delete_file();'
+"gm_sms.c", line 18: Warning: C2874W: 'me' may be used before being set
+"gm_sms.c", line 1260: Warning: C2874W: 'pTempFile' may be used before being set
+"gm_sms.c", line 1829: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_sms.c: 26 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gm_task.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_task.o gm_task.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gm_task.c", line 1081: Warning: C2870W: variable 'rRect' declared but not used
+"gm_task.c", line 1162: Warning: C2870W: variable 'rRect' declared but not used
+"gm_task.c", line 1175: Warning: C2870W: variable 'si_Ret' declared but not used
+"gm_task.c", line 1464: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 1893: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 2018: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 2625: Warning: C2870W: variable 'sTmp' declared but not used
+"gm_task.c", line 2709: Warning: C2809W: character sequence /* inside comment
+"gm_task.c", line 2855: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 3030: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 3531: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 3557: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 3593: Warning: C2870W: variable 'temp' declared but not used
+"gm_task.c", line 3593: Warning: C2870W: variable 'nExpLen' declared but not used
+"gm_task.c", line 3593: Warning: C2870W: variable 'nLine' declared but not used
+"gm_task.c", line 3600: Warning: C2207W: inventing 'extern int yb_ShowInputMode();'
+"gm_task.c", line 4021: Warning: C2870W: variable 'nTextLen' declared but not used
+"gm_task.c", line 4082: Warning: C2870W: variable 'asText' declared but not used
+"gm_task.c", line 4082: Warning: C2870W: variable 'bRtn' declared but not used
+"gm_task.c", line 4101: Warning: C2870W: variable 'm_nFontHeight' declared but not used
+"gm_task.c", line 4101: Warning: C2870W: variable 'rMenuItem' declared but not used
+"gm_task.c", line 4101: Warning: C2870W: variable 'rRect_cln' declared but not used
+"gm_task.c", line 4377: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 4411: Warning: C2870W: variable 'temp' declared but not used
+"gm_task.c", line 4411: Warning: C2870W: variable 'nExpLen' declared but not used
+"gm_task.c", line 4411: Warning: C2870W: variable 'nLine' declared but not used
+"gm_task.c", line 4838: Warning: C2870W: variable 'rRect_cln' declared but not used
+"gm_task.c", line 5253: Warning: C2870W: variable 'rRect' declared but not used
+"gm_task.c", line 5331: Warning: C2870W: variable 'rRect' declared but not used
+"gm_task.c", line 5342: Warning: C2870W: variable 'si_Ret' declared but not used
+"gm_task.c", line 5442: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 5626: Warning: C2870W: variable 'cStatus' declared but not used
+"gm_task.c", line 5993: Warning: C2870W: variable 'iColor' declared but not used
+"gm_task.c", line 6010: Warning: C2870W: variable 'rRect' declared but not used
+"gm_task.c", line 6042: Warning: C2870W: variable 'szFailure' declared but not used
+"gm_task.c", line 6184: Warning: C2870W: variable 'me' declared but not used
+"gm_task.c", line 6227: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 6266: Warning: C2870W: variable 'temp' declared but not used
+"gm_task.c", line 6266: Warning: C2870W: variable 'nExpLen' declared but not used
+"gm_task.c", line 6266: Warning: C2870W: variable 'nLine' declared but not used
+"gm_task.c", line 6280: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 6298: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_task.c", line 6339: Warning: C2870W: variable 'temp' declared but not used
+"gm_task.c", line 6339: Warning: C2870W: variable 'nExpLen' declared but not used
+"gm_task.c", line 6339: Warning: C2870W: variable 'nLine' declared but not used
+"gm_task.c", line 6525: Warning: C2870W: variable 'me' declared but not used
+"gm_task.c", line 6213: Warning: C2874W: 'me' may be used before being set
+"gm_task.c", line 6533: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_task.c", line 6533: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_task.c: 57 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gmTools.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gmTools.o gmTools.c
+"gmTools.c", line 563: Warning: C2874W: 'nRtn' may be used before being set
+gmTools.c: 1 warning, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT gpsOneXTRA.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gpsOneXTRA.o gpsOneXTRA.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"gpsOneXTRA.c", line 672: Warning: C2201W: '2208988800' treated as '2208988800ll'
+"gpsOneXTRA.c", line 904: Warning: C2870W: variable 'sc_buf_rl' declared but not used
+"gpsOneXTRA.c", line 117: Warning: C2874W: 'me' may be used before being set
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gpsOneXTRA.c", line 1907: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gpsOneXTRA.c: 13 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT MD5.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o MD5.o MD5.c
+"MD5.c", line 30: Warning: C2207W: inventing 'extern int memcpy();'
+MD5.c: 1 warning, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT More.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o More.o More.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"More.c", line 541: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"More.c", line 541: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"More.c", line 541: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"More.c", line 541: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"More.c", line 541: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"More.c", line 541: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"More.c", line 541: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"More.c", line 541: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"More.c", line 541: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+More.c: 10 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT My_Function.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o My_Function.o My_Function.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"My_Function.c", line 84: Warning: C2917W: no side effect in void context: '<expr> == <expr>'
+"My_Function.c", line 249: Warning: C2870W: variable 'fiInfo' declared but not used
+"My_Function.c", line 637: Warning: C2897W: odd unsigned comparison with 0: '<='
+"My_Function.c", line 793: Warning: C2870W: variable 'pwa' declared but not used
+"My_Function.c", line 1066: Warning: C2870W: variable 'nErr' declared but not used
+"My_Function.c", line 838: Warning: C2874W: 'pMe' may be used before being set
+"My_Function.c", line 1424: Warning: C2873W: implicit return in non-void function
+"My_Function.c", line 1454: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"My_Function.c", line 1454: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+My_Function.c: 17 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT newgimis.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o newgimis.o newgimis.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"newgimis.c", line 284: Warning: C2870W: variable 'pData' declared but not used
+"newgimis.c", line 1800: Warning: C2870W: variable 'me' declared but not used
+"newgimis.c", line 3810: Warning: C2809W: character sequence /* inside comment
+"newgimis.c", line 4669: Warning: C2870W: variable 'pszTok' declared but not used
+"newgimis.c", line 5372: Warning: C2870W: variable 'pszDelimiter' declared but not used
+"newgimis.c", line 6989: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7401: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7608: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7989: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 8147: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 8262: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 8890: Warning: C2870W: variable 'szJWD' declared but not used
+"newgimis.c", line 8890: Warning: C2870W: variable 'szPost' declared but not used
+"newgimis.c", line 10220: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 10220: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 11426: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 11426: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 12462: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 12462: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 13307: Warning: C2870W: variable 'si_ret' declared but not used
+"newgimis.c", line 13307: Warning: C2870W: variable 'dDate' declared but not used
+"newgimis.c", line 13443: Warning: C2211W: non-value return in non-void function
+"newgimis.c", line 13590: Warning: C2870W: variable 'si_ret' declared but not used
+"newgimis.c", line 14261: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 14907: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15142: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15362: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15391: Warning: C2870W: variable 'sc_Count' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'si_Ret' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'nRead' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf_d' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf_T' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf1' declared but not used
+"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf' declared but not used
+"newgimis.c", line 15632: Warning: C2870W: variable 'lStr_msg' declared but not used
+"newgimis.c", line 15632: Warning: C2870W: variable 'sc_Count' declared but not used
+"newgimis.c", line 15670: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15684: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15698: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15733: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15746: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 16089: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16158: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16246: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16314: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16403: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 17904: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 17930: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 17965: Warning: C2870W: variable 'temp' declared but not used
+"newgimis.c", line 17965: Warning: C2870W: variable 'nExpLen' declared but not used
+"newgimis.c", line 17965: Warning: C2870W: variable 'nLine' declared but not used
+"newgimis.c", line 18053: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 18088: Warning: C2870W: variable 'temp' declared but not used
+"newgimis.c", line 18088: Warning: C2870W: variable 'nExpLen' declared but not used
+"newgimis.c", line 18088: Warning: C2870W: variable 'nLine' declared but not used
+"newgimis.c", line 18363: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 19947: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 19986: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20025: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20070: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20788: Warning: C2870W: variable 'nTimes' declared but not used
+"newgimis.c", line 20788: Warning: C2870W: variable 'lInt_StartRun' declared but not used
+"newgimis.c", line 20846: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 21083: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 21331: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 21413: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 21878: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 22319: Warning: C2870W: variable 'wcText' declared but not used
+"newgimis.c", line 22482: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 21770: Warning: C2873W: implicit return in non-void function
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Start_qqsq' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Start_s' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_HtmlError' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_DisplayInfo' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'testgps_InitApplet' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_CloseSMS' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Close' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'SMS_StoreMsgCb' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_SaveSms' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'gm_SMSformat' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_trf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_ReleaseBuf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_CloseWeb' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_ReadBody' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_GotResp' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Status' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_DownLoad' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'SMS_CreateInterface' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Init' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+newgimis.c: 98 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT socket.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o socket.o socket.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"socket.c", line 30: Warning: C2207W: inventing 'extern int ud_RecLog();'
+"socket.c", line 312: Warning: C2207W: inventing 'extern int resolvePack();'
+"socket.c", line 897: Warning: C2211W: non-value return in non-void function
+"socket.c", line 963: Warning: C2870W: variable 'pwa' declared but not used
+"socket.c", line 1060: Warning: C2870W: variable 'nErr' declared but not used
+"socket.c", line 1367: Warning: C2207W: inventing 'extern int ud_rDistToChar();'
+"socket.c", line 1612: Warning: C2870W: variable 'pData' declared but not used
+"socket.c", line 723: Warning: C2874W: 'pMe' may be used before being set
+"socket.c", line 2024: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+socket.c: 10 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT SP_CONFIG.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o SP_CONFIG.o SP_CONFIG.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"SP_CONFIG.c", line 260: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+SP_CONFIG.c: 10 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT SP_GetGPSInfo.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o SP_GetGPSInfo.o SP_GetGPSInfo.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"SP_GetGPSInfo.c", line 924: Warning: C2870W: variable 'cPosDetMode' declared but not used
+"SP_GetGPSInfo.c", line 1008: Warning: C2870W: variable 'm_nFontHeight' declared but not used
+"SP_GetGPSInfo.c", line 1169: Warning: C2870W: variable 'cPosDetMode' declared but not used
+"SP_GetGPSInfo.c", line 1314: Warning: C2870W: variable 'cPosDetMode' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'testgps_GetGPSInfo_Paint' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"SP_GetGPSInfo.c", line 1901: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+SP_GetGPSInfo.c: 15 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT SP_Menu.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o SP_Menu.o SP_Menu.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"SP_Menu.c", line 16: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"SP_Menu.c", line 16: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+SP_Menu.c: 10 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT SP_ShowGetGPSInfo.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o SP_ShowGetGPSInfo.o SP_ShowGetGPSInfo.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"SP_ShowGetGPSInfo.c", line 537: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+SP_ShowGetGPSInfo.c: 10 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+OBJECT SP_Track.o
+	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o SP_Track.o SP_Track.c
+"OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"SP_Track.c", line 643: Warning: C2809W: character sequence /* inside comment
+"SP_Track.c", line 717: Warning: C2809W: character sequence /* inside comment
+"SP_Track.c", line 1245: Warning: C2870W: variable 'nErr' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Track_Optmal' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Track_DLOAD_FIRST' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Track_Network' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Track_One_Shot' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Track_Standalone' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"SP_Track.c", line 1289: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+SP_Track.c: 18 warnings, 0 errors, 0 serious errors
+---------------------------------------------------------------
+---------------------------------------------------------------
+TARGET C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf
+	C:\adsv12\bin\armlink -o C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf -ropi -rwpi -entry 0x8000 AEEAppGen.o AEEModGen.o gm_Addr.o gm_FileUpload.o gm_photo.o gm_Qchat.o gm_record.o gm_sms.o gm_task.o gmTools.o gpsOneXTRA.o MD5.o More.o My_Function.o newgimis.o socket.o SP_CONFIG.o SP_GetGPSInfo.o SP_Menu.o SP_ShowGetGPSInfo.o SP_Track.o -first AEEMod_Load
+---------------------------------------------------------------
+TARGET C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.mod
+	C:\adsv12\bin\fromelf  C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf -bin C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.mod
+Warning: Q0115W: Deprecated command syntax will not be supported in future versions. Use -output to specify the output file.
+Finished: 0 information, 1 warning and 0 error messages.
