@@ -87,7 +87,7 @@ static void testgps_GetGPSInfo_Paint( newgimis *pMe, GetGPSInfo_PaintRegions rgn
 //	   uf_RecLog(pMe,"重绘 1");
 
 	  IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2Beta" );
+	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2au" );
       testgps_Printf( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "GetGPSInfo" );
       if( pMe->m_gpsFlag  == 0 ) {  // 说明是卫星
          testgps_Printf_hanzi( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_RIGHT,strWX );
@@ -155,7 +155,7 @@ static void testgps_GetGPSInfo_Paint( newgimis *pMe, GetGPSInfo_PaintRegions rgn
 //		uf_RecLog(pMe,"重绘 2");
 
 	  IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2Beta" );
+	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2au" );
       testgps_Printf( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "GetGPSInfo" );
       if( pMe->m_gpsFlag  == 0 ) {  // 说明是卫星
          testgps_Printf_hanzi( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_RIGHT,strWX );
@@ -207,7 +207,7 @@ static void testgps_GetGPSInfo_Paint( newgimis *pMe, GetGPSInfo_PaintRegions rgn
    if( rgn == GETGPSINFO_PAINT_ERROR ) {
 //	   uf_RecLog(pMe,"重绘 3");
       IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2Beta" );
+	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2au" );
       testgps_Printf( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "GetGPSInfo" );
       if( pMe->m_gpsFlag  == 0 ) {  // 说明是卫星
          testgps_Printf_hanzi( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_RIGHT,strWX );
@@ -257,7 +257,7 @@ static void testgps_GetGPSInfo_Paint( newgimis *pMe, GetGPSInfo_PaintRegions rgn
 //	  uf_RecLog(pMe,"重绘 4");
 	  // m_bGetGPSF;//用来标记此时获取GPS的状态  TRUE -- 表示获取异常 FLASE -- 获取正常
 	  IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2Beta" );
+	  testgps_Printf( pMe, 0, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "Version:3.1.2au" );
       testgps_Printf( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "GetGPSInfo" );
       if( pMe->m_gpsFlag  == 0 ) {  // 说明是卫星
          testgps_Printf_hanzi( pMe, 1, 3, AEE_FONT_BOLD, IDF_ALIGN_RIGHT,strWX );

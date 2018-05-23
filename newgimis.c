@@ -19,7 +19,7 @@ FILE: newgimis.c
 
 //	#define TEST_URL  "http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&ver=2.6.8&pp=FU/ctvH"  //	&tel=18606079685
 //	#define TEST_URL  	"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=12345&ver=3.0.1ty&pp=FU/ctvH" // ²âÊÔÓÃ
-	#define TEST_URL  	"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=12345&ver=3.1.2Beta&pp=FU/ctvH" // ²âÊÔÓÃ
+	#define TEST_URL  	"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=12345&ver=3.1.2au&pp=FU/ctvH" // ²âÊÔÓÃ
 //	#define TEST_URL  "http://192.168.1.218/brewGPS/BrewServlet"
 
 #ifndef PHONE_AUTO_START
@@ -2096,7 +2096,7 @@ IDISPLAY_EraseRect(pMe->a.m_pIDisplay, &sr_Rect1);//Çå ³ýÒªÖ´ÐÐ»æÖÆ²Ù×÷µÄÆÁÄ»ÇøÓ
 					gimis_XTRA(pMe);		// ÒÔÏÂ²âÊÔÓÃ
 				
 					IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-					testgps_Printf( pMe, 0, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "ver = 3.1.2Beta" );
+					testgps_Printf( pMe, 0, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "ver = 3.1.2au" );
 					testgps_Printf( pMe, 2, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "start ..." );
 					
 					pMe->m_PowerFlag = '1';
@@ -2183,7 +2183,7 @@ IDISPLAY_EraseRect(pMe->a.m_pIDisplay, &sr_Rect1);//Çå ³ýÒªÖ´ÐÐ»æÖÆ²Ù×÷µÄÆÁÄ»ÇøÓ
 
 				
 				IDISPLAY_ClearScreen( pMe->a.m_pIDisplay );
-				testgps_Printf( pMe, 0, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "ver = 3.1.2Beta" );
+				testgps_Printf( pMe, 0, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "ver = 3.1.2au" );
 				testgps_Printf( pMe, 2, 5, AEE_FONT_BOLD, IDF_ALIGN_LEFT, "start ..." );
 
 				if (pMe->m_Flag_Qqsq == 1) //ÓÃÀ´±ê¼ÇÊÇ·ñÕýÔÚÇëÇóÊÚÈ¨  1 -- ÊÇ  0-- ²»ÊÇ)
@@ -3041,19 +3041,19 @@ IDISPLAY_EraseRect(pMe->a.m_pIDisplay, &sr_Rect1);//Çå ³ýÒªÖ´ÐÐ»æÖÆ²Ù×÷µÄÆÁÄ»ÇøÓ
 					if (STRCMP(pMe->MobileNoDJ,pMe->MyMobileNo) == 0) // ËµÃ÷ ºÅÂëÏàÍ¬
 					{
 						MEMSET(pMe->m_SQ1,0x00,250);
-						SPRINTF(pMe->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ,pMe->szMobileID);
+						SPRINTF(pMe->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ,pMe->szMobileID);
 					}
 					else
 					{
 						if (STRLEN(pMe->MyMobileNo) < 1)
 						{
 							MEMSET(pMe->m_SQ1,0x00,250);
-							SPRINTF(pMe->m_SQ1,"http://%s&tel=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ);
+							SPRINTF(pMe->m_SQ1,"http://%s&tel=%s&ver=3.1.2au&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ);
 						}
 						else
 						{
 							MEMSET(pMe->m_SQ1,0x00,250);
-							SPRINTF(pMe->m_SQ1,"http://%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->strCenterIp,pMe->szMobileID);
+							SPRINTF(pMe->m_SQ1,"http://%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->strCenterIp,pMe->szMobileID);
 						}
 
 					}
@@ -3618,7 +3618,7 @@ boolean newgimis_InitAppData(newgimis* pMe)
 		pMe->m_T_L = pMe->m_SYSCY / pMe->m_SYSFBH; // ×ÜµÄÐÐÊý
 		ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd), "total line  = %d",pMe->m_T_L);
 
-		ud_RecLog(pMe->a.m_pIShell,1,&(pMe->nInd), "3.1.2Beta By:2018.05.17");
+		ud_RecLog(pMe->a.m_pIShell,1,&(pMe->nInd), "3.1.2au By:2018.05.23");
 
 //		int m_MenuH;//²Ëµ¥¿Ø¼þµÄ¸ß¶È  
 //		int m_SYSFNH;//ÏµÍ³±ê×¼µÄ×ÖÌå¸ß¶È
@@ -7233,10 +7233,10 @@ static void myiweb_ReadTaskBody(newgimis *pwa)
 		if (STRCMP(pwa->MobileNoDJ,pwa->MyMobileNo) == 0) // ËµÃ÷ ºÅÂëÏàÍ¬
 		{
 			MEMSET(pwa->m_SQ1,0x00,250);
-			SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ,pwa->szMobileID);
+			SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ,pwa->szMobileID);
 			
 			//		MEMSET(pMe->m_SQ2,0x00,250);
-			//		SPRINTF(pMe->m_SQ2,"http://%s&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ,pMe->szMobileID);
+			//		SPRINTF(pMe->m_SQ2,"http://%s&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ,pMe->szMobileID);
 			
 		}
 		else
@@ -7244,20 +7244,20 @@ static void myiweb_ReadTaskBody(newgimis *pwa)
 			if (STRLEN(pwa->MyMobileNo) < 1)
 			{
 				MEMSET(pwa->m_SQ1,0x00,250);
-				SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ);
+				SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ);
 				
 				//			MEMSET(pMe->m_SQ2,0x00,250);
-				//			SPRINTF(pMe->m_SQ2,"http://%s&tel=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ);
+				//			SPRINTF(pMe->m_SQ2,"http://%s&tel=%s&ver=3.1.2au&pp=FU/ctvH",pMe->strCenterIp,pMe->MobileNoDJ);
 				
 			}
 			else
 			{
 				
 				MEMSET(pwa->m_SQ1,0x00,250);
-				SPRINTF(pwa->m_SQ1,"http://%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->szMobileID);
+				SPRINTF(pwa->m_SQ1,"http://%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->szMobileID);
 				
 				//		MEMSET(pMe->m_SQ2,0x00,250);
-				//		SPRINTF(pMe->m_SQ2,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+				//		SPRINTF(pMe->m_SQ2,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 				
 			}
 			
@@ -7282,19 +7282,19 @@ static void myiweb_HtmlError(newgimis *pwa)
 	if (STRCMP(pwa->MobileNoDJ,pwa->MyMobileNo) == 0) // ËµÃ÷ ºÅÂëÏàÍ¬
 	{
 		MEMSET(pwa->m_SQ1,0x00,250);
-		SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ,pwa->szMobileID);		
+		SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ,pwa->szMobileID);		
 	}
 	else
 	{
 		if (STRLEN(pwa->MyMobileNo) < 1)
 		{
 			MEMSET(pwa->m_SQ1,0x00,250);
-			SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ);
+			SPRINTF(pwa->m_SQ1,"http://%s&tel=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->MobileNoDJ);
 		}
 		else
 		{
 			MEMSET(pwa->m_SQ1,0x00,250);
-			SPRINTF(pwa->m_SQ1,"http://%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pwa->strCenterIp,pwa->szMobileID);	
+			SPRINTF(pwa->m_SQ1,"http://%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pwa->strCenterIp,pwa->szMobileID);	
 		}
 		
 	}
@@ -12520,11 +12520,11 @@ boolean SendGPSData( newgimis *pMe )
 			SPRINTF(pMe->show_Time,"%02d:%02d:%02d",dDate.wHour,dDate.wMinute,dDate.wSecond);
 			if (pMe->MyMobileNo != NULL)  // ÓÐµç»°ºÅÂëµÄÊ±ºò×Ô¼º¼Óµç»°ºÅÂë Ã»ÓÐµÄÊ±ºò
 			{
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
 			}
 			else
 			{
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
 			}
 
 
@@ -12905,15 +12905,15 @@ boolean SendGPSData( newgimis *pMe )
 		switch(pMe->nArySize)
 		{
 		case 1:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
 			break;
 		case 2:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->lonStr2,pMe->latStr1,pMe->latStr2,pMe->dVelHor1,pMe->dVelHor2,pMe->m_PM1,pMe->m_PM2,pMe->sDateTime1,pMe->sDateTime2);
 			break;
 		case 3:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,\
@@ -12922,7 +12922,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3);
 			break;
 		case 4:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,\
@@ -12931,7 +12931,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4);
 			break;
 		case 5:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,\
@@ -12940,7 +12940,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5);
 			break;
 		case 6:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,\
@@ -12949,7 +12949,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6);
 			break;
 		case 7:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,\
@@ -12958,7 +12958,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6,pMe->sDateTime7);
 			break;
 		case 8:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,pMe->lonStr8,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,pMe->latStr8,\
@@ -12973,15 +12973,15 @@ boolean SendGPSData( newgimis *pMe )
 		switch(pMe->nArySize)
 		{
 		case 1:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM1,pMe->sDateTime1);
 			break;
 		case 2:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->latStr1,pMe->latStr2,pMe->dVelHor1,pMe->dVelHor2,pMe->m_PM1,pMe->m_PM2,pMe->sDateTime1,pMe->sDateTime2);
 			break;
 		case 3:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,\
@@ -12989,7 +12989,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3);
 			break;
 		case 4:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,\
@@ -12997,7 +12997,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4);
 			break;
 		case 5:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,\
@@ -13005,7 +13005,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5);
 			break;
 		case 6:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c.%c;TT%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c.%c;TT%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,\
@@ -13013,7 +13013,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6);
 			break;
 		case 7:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,pMe->dVelHor7,\
@@ -13021,7 +13021,7 @@ boolean SendGPSData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6,pMe->sDateTime7);
 			break;
 		case 8:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,pMe->lonStr8,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,pMe->latStr8,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,pMe->dVelHor7,pMe->dVelHor8,\
@@ -13108,11 +13108,11 @@ boolean SendErrorGPSData( newgimis *pMe )
 
 	if (pMe->MyMobileNo != NULL)  // ÓÐµç»°ºÅÂëµÄÊ±ºò×Ô¼º¼Óµç»°ºÅÂë Ã»ÓÐµÄÊ±ºò
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
 	}
 	else
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
 	}
 
 	/*
@@ -13253,7 +13253,7 @@ boolean Send_Offline_GPSData(newgimis *pMe)
 	//1.ÉèÖÃpMe->sUrl
 	MEMSET(pMe->sUrl,0x00,1024);
 
-	SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta",pMe->strCenterIp);
+	SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au",pMe->strCenterIp);
 //	My_Log(pMe->a.m_pIShell,'1', &(pMe->nInd),"pMe->strCenterIp: %s", pMe->strCenterIp);
 //	My_Log(pMe->a.m_pIShell,'1', &(pMe->nInd),"pMe->sUrl  <- pMe->strCenterIp: %s", pMe->sUrl);
 
@@ -13362,11 +13362,11 @@ boolean SendErrorGPSData_0( newgimis *pMe )
 
 	if (pMe->MyMobileNo != NULL)  // ÓÐµç»°ºÅÂëµÄÊ±ºò×Ô¼º¼Óµç»°ºÅÂë Ã»ÓÐµÄÊ±ºò
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
 	}
 	else
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_ycPM,pMe->sDateTime1);
 
 	}
 
@@ -13550,7 +13550,7 @@ static boolean testgps_StartSendXT( newgimis *pMe )  // ·¢ËÍÐÄÌøÖÜÆÚ
 	MEMSET(pMe->Url_st,0x00,250);
 	STRCAT(pMe->Url_st,"http://");
 	STRCAT(pMe->Url_st,pMe->strCenterIp);
-	STRCAT(pMe->Url_st,"&ver=3.1.2Beta");
+	STRCAT(pMe->Url_st,"&ver=3.1.2au");
 
 	if (STRLEN(pMe->MyMobileNo) > 0) 
 	{
@@ -20705,24 +20705,24 @@ void newgimis_WaitForQChat(newgimis *pMe)
 		if (STRLEN(pMe->MobileNoDJ) > 10 ){
 			
 			MEMSET(pMe->m_SQ1,0x00,250);
-			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 			MEMSET(pMe->m_SQ2,0x00,250);
-			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 
 		}
 		else if (STRLEN(pMe->MyMobileNo) > 10 ){
 
 			MEMSET(pMe->m_SQ1,0x00,250);
-			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
+			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
 			MEMSET(pMe->m_SQ2,0x00,250);
-			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
+			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
 
 		}else{
 
 			MEMSET(pMe->m_SQ1,0x00,250);
-			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+			SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 			MEMSET(pMe->m_SQ2,0x00,250);
-			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+			SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 
 		}
 	}
@@ -20734,23 +20734,23 @@ void newgimis_WaitForQChat(newgimis *pMe)
 			if (STRLEN(pMe->MobileNoDJ) > 10){
 					
 				MEMSET(pMe->m_SQ1,0x00,250);
-				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 				MEMSET(pMe->m_SQ2,0x00,250);
-				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 
 			}else if (STRLEN(pMe->MyMobileNo) > 10 ){
 				
 				MEMSET(pMe->m_SQ1,0x00,250);
-				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
 				MEMSET(pMe->m_SQ2,0x00,250);
-				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MyMobileNo,pMe->szMobileID);
 
 			}else{
 
 				MEMSET(pMe->m_SQ1,0x00,250);
-				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 				MEMSET(pMe->m_SQ2,0x00,250);
-				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 
 			}
 		}
@@ -20759,16 +20759,16 @@ void newgimis_WaitForQChat(newgimis *pMe)
 			if (STRLEN(pMe->MobileNoDJ) > 10){
 				
 				MEMSET(pMe->m_SQ1,0x00,250);
-				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 				MEMSET(pMe->m_SQ2,0x00,250);
-				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
+				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&tel=%s&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->MobileNoDJ,pMe->szMobileID);
 
 			}else{
 				
 				MEMSET(pMe->m_SQ1,0x00,250);
-				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+				SPRINTF(pMe->m_SQ1,"http://gps.richtalk.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 				MEMSET(pMe->m_SQ2,0x00,250);
-				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2Beta&pp=FU/ctvH",pMe->szMobileID);
+				SPRINTF(pMe->m_SQ2,"http://zc.gota.richmap.cn/brewGPS/BrewServlet?act=autdec&imsi=%s&ver=3.1.2au&pp=FU/ctvH",pMe->szMobileID);
 
 			}
 		}
@@ -21933,11 +21933,11 @@ boolean SendBDData( newgimis *pMe )
 			SPRINTF(pMe->show_Time,"%02d:%02d:%02d",dDate.wHour,dDate.wMinute,dDate.wSecond);
 			if (pMe->MyMobileNo != NULL)  // ÓÐµç»°ºÅÂëµÄÊ±ºò×Ô¼º¼Óµç»°ºÅÂë Ã»ÓÐµÄÊ±ºò
 			{
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
 			}
 			else
 			{
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
 			}
 
 			MEMSET(sc_buf1,0x00,10);
@@ -22169,11 +22169,11 @@ boolean SendBDData( newgimis *pMe )
 		switch(pMe->nArySize)
 		{
 		case 1:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%d;TT%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
 			break;
 		case 2:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%d,%d;TT%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%d,%d;TT%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->latStr1,\
 				pMe->latStr2,pMe->dVelHor1,pMe->dVelHor2,\
@@ -22181,7 +22181,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2);
 			break;
 		case 3:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%d,%d,%d;TT%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%d,%d,%d;TT%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,\
@@ -22190,7 +22190,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3);
 			break;
 		case 4:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%d,%d,%d,%d;TT%s,%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%d,%d,%d,%d;TT%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,\
@@ -22199,7 +22199,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4);
 			break;
 		case 5:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,\
@@ -22208,7 +22208,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5);
 			break;
 		case 6:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,\
@@ -22217,7 +22217,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6);
 			break;
 		case 7:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,\
@@ -22226,7 +22226,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6,pMe->sDateTime7);
 			break;
 		case 8:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%d,%d,%d,%d,%d,%d,%d,%d;TT%s,%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,\
 				pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,pMe->lonStr8,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,pMe->latStr8,\
@@ -22241,13 +22241,13 @@ boolean SendBDData( newgimis *pMe )
 		switch(pMe->nArySize)
 		{
 		case 1:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s;LA%s;VV%d;EP0;KS0;PM%c;TT%s",pMe->strCenterIp,pMe->lonStr1,pMe->latStr1,pMe->dVelHor1,pMe->m_PM_BD,pMe->sDateTime1);
 			break;
 		case 2:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->latStr1,pMe->latStr2,pMe->dVelHor1,pMe->dVelHor2,pMe->m_PM_BD,pMe->m_PM_BD,pMe->sDateTime1,pMe->sDateTime2);
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s;LA%s,%s;VV%d,%d;EP0,0;KS0,0;PM%c,%c;TT%s,%s",pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->latStr1,pMe->latStr2,pMe->dVelHor1,pMe->dVelHor2,pMe->m_PM_BD,pMe->m_PM_BD,pMe->sDateTime1,pMe->sDateTime2);
 			break;
 		case 3:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s;LA%s,%s,%s;VV%d,%d,%d;EP0,0,0;KS0,0,0;PM%c,%c,%c;TT%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,\
@@ -22255,7 +22255,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3);
 			break;
 		case 4:
-			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
+			SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s;LA%s,%s,%s,%s;VV%d,%d,%d,%d;EP0,0,0,0;KS0,0,0,0;PM%c,%c,%c,%c;TT%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,\
@@ -22263,7 +22263,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4);
 			break;
 		case 5:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d;EP0,0,0,0,0;KS0,0,0,0,0;PM%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,\
@@ -22271,7 +22271,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5);
 			break;
 		case 6:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c.%c;TT%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0;KS0,0,0,0,0,0;PM%c,%c,%c,%c,%c.%c;TT%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,\
@@ -22279,7 +22279,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6);
 			break;
 		case 7:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0;KS0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,pMe->dVelHor7,\
@@ -22287,7 +22287,7 @@ boolean SendBDData( newgimis *pMe )
 				pMe->sDateTime1,pMe->sDateTime2,pMe->sDateTime3,pMe->sDateTime4,pMe->sDateTime5,pMe->sDateTime6,pMe->sDateTime7);
 			break;
 		case 8:
-				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
+				SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&pp=LO%s,%s,%s,%s,%s,%s,%s,%s;LA%s,%s,%s,%s,%s,%s,%s,%s;VV%d,%d,%d,%d,%d,%d,%d,%d;EP0,0,0,0,0,0,0,0;KS0,0,0,0,0,0,0,0;PM%c,%c,%c,%c,%c,%c,%c,%c;TT%s,%s,%s,%s,%s,%s,%s,%s",\
 				pMe->strCenterIp,pMe->lonStr1,pMe->lonStr2,pMe->lonStr3,pMe->lonStr4,pMe->lonStr5,pMe->lonStr6,pMe->lonStr7,pMe->lonStr8,\
 				pMe->latStr1,pMe->latStr2,pMe->latStr3,pMe->latStr4,pMe->latStr5,pMe->latStr6,pMe->latStr7,pMe->latStr8,\
 				pMe->dVelHor1,pMe->dVelHor2,pMe->dVelHor3,pMe->dVelHor4,pMe->dVelHor5,pMe->dVelHor6,pMe->dVelHor7,pMe->dVelHor8,\
@@ -22354,11 +22354,11 @@ boolean SendErrorBDData( newgimis *pMe )
 
 	if (pMe->MyMobileNo != NULL)  // ÓÐµç»°ºÅÂëµÄÊ±ºò×Ô¼º¼Óµç»°ºÅÂë Ã»ÓÐµÄÊ±ºò
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_PM_BD,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&tel=%s&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID,pMe->m_PM_BD,pMe->sDateTime1);
 	}
 	else
 	{
-		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2Beta&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_PM_BD,pMe->sDateTime1);
+		SPRINTF(pMe->sUrl,"http://%s&ver=3.1.2au&imsi=%s&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM%d;TT%s",pMe->strCenterIp,pMe->szMobileID,pMe->m_PM_BD,pMe->sDateTime1);
 
 	}
 
