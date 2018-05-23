@@ -6,33 +6,33 @@
 --------------------Configuration: newgimis - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3320.tmp" with contents
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5073.tmp" with contents
 [
 /nologo /MTd /W3 /GX /O2 /I "C:\brewsdk\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AEE_SIMULATOR" /FR"Release/" /Fp"Release/newgimis.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
 "C:\brewsdk\sdk\src\AEEAppGen.c"
 "C:\brewsdk\sdk\src\AEEModGen.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_Addr.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_FileUpload.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_photo.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_Qchat.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gmTools.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gpsOneXTRA.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\MD5.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\More.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_CONFIG.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_GetGPSInfo.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_Menu.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_ShowGetGPSInfo.c"
-"C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_Track.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_Addr.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_FileUpload.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_photo.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_Qchat.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gmTools.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gpsOneXTRA.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\MD5.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\More.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_CONFIG.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_GetGPSInfo.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_Menu.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_ShowGetGPSInfo.c"
+"C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_Track.c"
 ]
-Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3320.tmp" 
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3321.tmp" with contents
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5073.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5074.tmp" with contents
 [
 oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/newgimis.pdb" /machine:I386 /out:"newgimis.dll" /implib:"Release/newgimis.lib" 
 ".\Release\AEEAppGen.obj"
@@ -57,132 +57,132 @@ oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /i
 ".\Release\SP_ShowGetGPSInfo.obj"
 ".\Release\SP_Track.obj"
 ]
-Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3321.tmp"
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5074.tmp"
 <h3>Output Window</h3>
 Compiling...
 AEEAppGen.c
 AEEModGen.c
 gm_Addr.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_Addr.c(1845) : warning C4101: 'nAddrCat' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_Addr.c(1963) : warning C4101: 'nAddrCat' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_Addr.c(2082) : warning C4101: 'nAddrCat' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_Addr.c(1845) : warning C4101: 'nAddrCat' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_Addr.c(1963) : warning C4101: 'nAddrCat' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_Addr.c(2082) : warning C4101: 'nAddrCat' : unreferenced local variable
 gm_FileUpload.c
 gm_photo.c
 gm_Qchat.c
 gm_record.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(102) : warning C4101: 'lStr_Log' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(246) : warning C4101: 'lStr_Log' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(397) : warning C4101: 'lStr_Log' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(394) : warning C4101: 'strDateTime' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(933) : warning C4101: 'szText' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(102) : warning C4101: 'lStr_Log' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(246) : warning C4101: 'lStr_Log' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(397) : warning C4101: 'lStr_Log' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(394) : warning C4101: 'strDateTime' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(933) : warning C4101: 'szText' : unreferenced local variable
 gm_sms.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_record.c(58) : warning C4700: local variable 'me' used without having been initialized
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(588) : warning C4101: 'titleBuf' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(586) : warning C4101: 'aeContent' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(969) : warning C4101: 'fiInfo' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1044) : warning C4013: 'MP_AddMenuItemEx' undefined; assuming extern returning int
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1286) : warning C4244: '=' : conversion from 'unsigned long ' to 'short ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1318) : warning C4033: 'SamplePosDet_LongSMS_Content_HandleEvent' must return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1565) : warning C4013: 'Delete_file' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_record.c(58) : warning C4700: local variable 'me' used without having been initialized
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(587) : warning C4101: 'st' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(591) : warning C4101: 'aeContent' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(974) : warning C4101: 'fiInfo' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1049) : warning C4013: 'MP_AddMenuItemEx' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1291) : warning C4244: '=' : conversion from 'unsigned long ' to 'short ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1323) : warning C4033: 'SamplePosDet_LongSMS_Content_HandleEvent' must return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1570) : warning C4013: 'Delete_file' undefined; assuming extern returning int
 gm_task.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1047) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_sms.c(1577) : warning C4715: 'SamplePosDet_LongSMS_Content_HandleEvent' : not all control paths return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1025) : warning C4101: 'rRect' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1103) : warning C4101: 'rRect' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1400) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1500) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1513) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1591) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1604) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1701) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1714) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1839) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1901) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(2782) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(3600) : warning C4013: 'yb_ShowInputMode' undefined; assuming extern returning int
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(3257) : warning C4101: 'rRect_cln' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(3259) : warning C4101: 'rMenuItem' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(3581) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(3580) : warning C4101: 'nLine' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4111) : warning C4101: 'rRect_cln' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4399) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4398) : warning C4101: 'nLine' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5197) : warning C4101: 'rRect' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5275) : warning C4101: 'rRect' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5354) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5450) : warning C4101: 'cStatus' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5955) : warning C4101: 'iColor' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5998) : warning C4101: 'rRect' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(6254) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(6253) : warning C4101: 'nLine' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(6327) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(6326) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1052) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_sms.c(1582) : warning C4715: 'SamplePosDet_LongSMS_Content_HandleEvent' : not all control paths return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1025) : warning C4101: 'rRect' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1103) : warning C4101: 'rRect' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1400) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1500) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1513) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1591) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1604) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1701) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1714) : warning C4244: '=' : conversion from 'unsigned long ' to 'char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1839) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1901) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(2782) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(3600) : warning C4013: 'yb_ShowInputMode' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(3257) : warning C4101: 'rRect_cln' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(3259) : warning C4101: 'rMenuItem' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(3581) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(3580) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4111) : warning C4101: 'rRect_cln' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4399) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4398) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5197) : warning C4101: 'rRect' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5275) : warning C4101: 'rRect' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5354) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5450) : warning C4101: 'cStatus' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5955) : warning C4101: 'iColor' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5998) : warning C4101: 'rRect' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(6254) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(6253) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(6327) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(6326) : warning C4101: 'nLine' : unreferenced local variable
 gmTools.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(717) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1039) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1061) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1118) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(1140) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4189) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4192) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4218) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4221) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(4917) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5211) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5233) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5289) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\gm_task.c(5311) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(717) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1039) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1061) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1118) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(1140) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4189) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4192) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4218) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4221) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(4917) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5211) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5233) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5289) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\gm_task.c(5311) : warning C4761: integral size mismatch in argument; conversion supplied
 gpsOneXTRA.c
 MD5.c
 More.c
 My_Function.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(151) : warning C4101: 'fiInfo' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(151) : warning C4101: 'fiInfo' : unreferenced local variable
 newgimis.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(265) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(287) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(293) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(312) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(326) : warning C4761: integral size mismatch in argument; conversion supplied
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(840) : warning C4700: local variable 'pMe' used without having been initialized
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\My_Function.c(1424) : warning C4715: 'FILE_Open' : not all control paths return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(4810) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(5306) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(13208) : warning C4101: 'dDate' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(13443) : warning C4033: 'testgps_StartSendXT' must return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(15265) : warning C4101: 'sc_Count' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(15405) : warning C4101: 'lStr_msg' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(15403) : warning C4101: 'sc_Count' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(17952) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(17951) : warning C4101: 'nLine' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(18075) : warning C4101: 'nExpLen' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(18074) : warning C4101: 'nLine' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(20676) : warning C4101: 'lInt_StartRun' : unreferenced local variable
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(21887) : warning C4101: 'wcText' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(265) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(287) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(293) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(312) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(326) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(840) : warning C4700: local variable 'pMe' used without having been initialized
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\My_Function.c(1424) : warning C4715: 'FILE_Open' : not all control paths return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(4811) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(5307) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(13209) : warning C4101: 'dDate' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(13444) : warning C4033: 'testgps_StartSendXT' must return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(15266) : warning C4101: 'sc_Count' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(15406) : warning C4101: 'lStr_msg' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(15404) : warning C4101: 'sc_Count' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(17953) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(17952) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(18076) : warning C4101: 'nExpLen' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(18075) : warning C4101: 'nLine' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(20677) : warning C4101: 'lInt_StartRun' : unreferenced local variable
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(21888) : warning C4101: 'wcText' : unreferenced local variable
 socket.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(13590) : warning C4715: 'testgps_StartSendXT' : not all control paths return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\newgimis.c(21770) : warning C4715: 'InputMode33' : not all control paths return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(30) : warning C4013: 'ud_RecLog' undefined; assuming extern returning int
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(312) : warning C4013: 'resolvePack' undefined; assuming extern returning int
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(897) : warning C4033: 'resolvePack' must return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(1367) : warning C4013: 'ud_rDistToChar' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(13591) : warning C4715: 'testgps_StartSendXT' : not all control paths return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\newgimis.c(21771) : warning C4715: 'InputMode33' : not all control paths return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(30) : warning C4013: 'ud_RecLog' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(312) : warning C4013: 'resolvePack' undefined; assuming extern returning int
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(897) : warning C4033: 'resolvePack' must return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(1367) : warning C4013: 'ud_rDistToChar' undefined; assuming extern returning int
 SP_CONFIG.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(725) : warning C4700: local variable 'pMe' used without having been initialized
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(951) : warning C4715: 'resolvePack' : not all control paths return a value
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\socket.c(1162) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(725) : warning C4700: local variable 'pMe' used without having been initialized
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(951) : warning C4715: 'resolvePack' : not all control paths return a value
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\socket.c(1162) : warning C4761: integral size mismatch in argument; conversion supplied
 SP_GetGPSInfo.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_GetGPSInfo.c(99) : warning C4018: '!=' : signed/unsigned mismatch
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_GetGPSInfo.c(107) : warning C4018: '!=' : signed/unsigned mismatch
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_GetGPSInfo.c(225) : warning C4018: '!=' : signed/unsigned mismatch
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_GetGPSInfo.c(233) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_GetGPSInfo.c(99) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_GetGPSInfo.c(107) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_GetGPSInfo.c(225) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_GetGPSInfo.c(233) : warning C4018: '!=' : signed/unsigned mismatch
 SP_Menu.c
 SP_ShowGetGPSInfo.c
 SP_Track.c
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_Track.c(299) : warning C4018: '!=' : signed/unsigned mismatch
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_Track.c(307) : warning C4018: '!=' : signed/unsigned mismatch
-C:\test\20180517-3.1.2Beta\newgimis3.1.2std\SP_Track.c(319) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_Track.c(299) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_Track.c(307) : warning C4018: '!=' : signed/unsigned mismatch
+C:\test\20180329-中兴V8-添加收件箱\newgimis3.1.2ZXV8\SP_Track.c(319) : warning C4018: '!=' : signed/unsigned mismatch
 Linking...
    Creating library Release/newgimis.lib and object Release/newgimis.exp
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4107.tmp" with contents
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5A74.tmp" with contents
 [
 /nologo /o"Release/newgimis.bsc" 
 ".\Release\AEEAppGen.sbr"
@@ -206,7 +206,7 @@ Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4107.tmp" with 
 ".\Release\SP_Menu.sbr"
 ".\Release\SP_ShowGetGPSInfo.sbr"
 ".\Release\SP_Track.sbr"]
-Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4107.tmp"
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5A74.tmp"
 Creating browse info file...
 <h3>Output Window</h3>
 

@@ -705,13 +705,13 @@ int Upload_Init_7Day(newgimis *pMe)
 
 	if (pMe->MyMobileNo != NULL)  // 有电话号码的时候自己加电话号码 没有的时候
 	{
-		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID);
+		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2ZXV8&tel=%s&imsi=%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID);
 		//SPRINTF(pMe->pURL_7Day,"http://61.131.1.153:9810/partition/brewGPS/BrewServlet?act=httpdec&ver=3.0.5std");
-		//http://cn.richtalk.cn:80/brewGPS/BrewServlet?act=httpdec&ver=3.1.2Beta&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM0;TT20160720112129&tel=13348552109&imsi=460030948567805
+		//http://cn.richtalk.cn:80/brewGPS/BrewServlet?act=httpdec&ver=3.1.2ZXV8&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM0;TT20160720112129&tel=13348552109&imsi=460030948567805
 	}
 	else
 	{
-		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2Beta&imsi=%s",pMe->strCenterIp,pMe->szMobileID);
+		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2ZXV8&imsi=%s",pMe->strCenterIp,pMe->szMobileID);
 	}
 	
 	ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"Upload_Init_7Day in url=%s",pMe->pURL_7Day);

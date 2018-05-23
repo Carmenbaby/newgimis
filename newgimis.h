@@ -56,8 +56,8 @@ typedef enum {
 
 
 
-#define DEFAULT_VERSION				    "V3.1.2Beta"			// 版本号   
-#define D_VERSION				    "3.1.2Beta"			// 版本号 
+#define DEFAULT_VERSION				    "V3.1.2ZXV8"			// 版本号   
+#define D_VERSION				    "3.1.2ZXV8"			// 版本号 
 #define SPD_MOBILE_NO			"MOBILE_NO = "		// 手机号码	
 #define SPD_MOBILE_IMEI         "MOBILE_IMEI = "		// 手机imei
 #define DEFAULT_FIELD_SPLIT			";"					// 发送数据的不同字段字符串之间的分割符

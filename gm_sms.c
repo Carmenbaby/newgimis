@@ -483,9 +483,9 @@ static void Sms_trf(cSms * me)
 	uint16  nItemCount = 0;
 	
 	ISmsRecords *pRecords = NULL;
-	
+
 	me->nState = 5;
-	
+
 	pRecords = gm_SMSformat(me->pRecData);
 	if (pRecords) 
 	{
@@ -502,19 +502,21 @@ static void Sms_trf(cSms * me)
 				{
 					STRCPY(me->m_SMSList.pSmsInfo[i].sCALLNO,pRecords->pItems[i].ppVal[j]); 
 				}
-				else if (STRCMP(pRecords->pItems[i].ppNam[j],"ct") == 0) 
+				else if (STRCMP(pRecords->pItems[i].ppNam[j],"ct") == 0)		//可以在这里存到一个地方。
 				{
 					int nContentLen = STRLEN(pRecords->pItems[i].ppVal[j]);
 					me->m_SMSList.pSmsInfo[i].nContentLen = (nContentLen+1)*sizeof(AECHAR);
 					me->m_SMSList.pSmsInfo[i].aeContent = (AECHAR *)MALLOC(me->m_SMSList.pSmsInfo[i].nContentLen);
 					UTF8_TO_WSTR((byte *)pRecords->pItems[i].ppVal[j],nContentLen,me->m_SMSList.pSmsInfo[i].aeContent,me->m_SMSList.pSmsInfo[i].nContentLen);
 					// Change by zjie  2014-05-04 应该有误  me->m_SMSList.pSmsInfo->nContentLen = WSTRLEN(me->m_SMSList.pSmsInfo[i].aeContent);
-					me->m_SMSList.pSmsInfo[i].nContentLen = WSTRLEN(me->m_SMSList.pSmsInfo[i].aeContent);
+					me->m_SMSList.pSmsInfo[i].nContentLen = (WSTRLEN(me->m_SMSList.pSmsInfo[i].aeContent) + 1)*sizeof(AECHAR);//;//改造成长短信
 				}
+
 				
 				FREEIF(pRecords->pItems[i].ppNam[j]);
 				FREEIF(pRecords->pItems[i].ppVal[j]);
 			}
+
 		}
 		FREEIF(pRecords->pItems)
 			FREEIF(pRecords);
@@ -567,6 +569,9 @@ static ISmsRecords *gm_SMSformat(char *sBuf)
 			
 			nLoc += (ITEM_NAME_LEN+CONTENT_BYTE_LEN+nContentLen);						// 这里的nContentLen是前一配置项的内容长度
 		}
+
+
+
 	}
 ExitHere:
 	return pRecords;
@@ -650,24 +655,24 @@ static void Sms_SaveSms(cSms * me)
 	//------------------
 	
 	
-	//MEMSET(titleBuf,0x00,sizeof(titleBuf));
-	//SPRINTF(titleBuf,"%010d* %04d-%02d-%02d %02d:%02d:%02d",GETTIMEMS(),pDate.wYear,pDate.wMonth,pDate.wDay,pDate.wHour,pDate.wMinute,pDate.wSecond);
+	MEMSET(titleBuf,0x00,sizeof(titleBuf));
+	SPRINTF(titleBuf,"%010d* %04d-%02d-%02d %02d:%02d:%02d",GETTIMEMS(),pDate.wYear,pDate.wMonth,pDate.wDay,pDate.wHour,pDate.wMinute,pDate.wSecond);
 	//aeContent = me->m_SMSList.pSmsInfo[idx].aeContent;
 	//aeContent_len = me->m_SMSList.pSmsInfo[idx].nContentLen;
 
-	//MEMSET(pMe->titleBuf_LongSMS,0x00,sizeof(pMe->titleBuf_LongSMS));
-	//MEMCPY(pMe->titleBuf_LongSMS,titleBuf,10);
+	MEMSET(pMe->titleBuf_LongSMS,0x00,sizeof(pMe->titleBuf_LongSMS));
+	MEMCPY(pMe->titleBuf_LongSMS,titleBuf,10);
 
-	//write_LongSMS_Data(pMe,me->m_SMSList.pSmsInfo[idx].aeContent,me->m_SMSList.pSmsInfo[idx].nContentLen,titleBuf);
+	write_LongSMS_Data(pMe,me->m_SMSList.pSmsInfo[idx].aeContent,me->m_SMSList.pSmsInfo[idx].nContentLen,titleBuf);
 	//------------------
 	
 	SMS_StoreMsgCb(me);
-	st = AEESMS_NV_CDMA;
-	CALLBACK_Init(&me->cbMsg, SMS_StoreMsgCb, me);
+	//st = AEESMS_NV_CDMA;
+	//CALLBACK_Init(&me->cbMsg, SMS_StoreMsgCb, me);
 	
-	ISMSSTORAGE_StoreMsg(me->pISmsStorage,st,me->pISmsMsg,&me->cbMsg,&nIndex,&uErr);
+	//ISMSSTORAGE_StoreMsg(me->pISmsStorage,st,me->pISmsMsg,&me->cbMsg,&nIndex,&uErr);
 	//ISMSSTORAGE2_StoreMsg(me->pISmsStorage,st,me->pISmsMsg,&me->cbMsg,&nIndex,&uErr);
-	ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"ISMSSTORAGE_StoreMsg return=%d,index=%d",uErr,nIndex);
+	//ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"ISMSSTORAGE_StoreMsg return=%d,index=%d",uErr,nIndex);
 
 		
 	return;
@@ -696,23 +701,23 @@ static void SMS_StoreMsgCb(cSms * me)
 		{
 			Sms_FinishAlert(pMe);
 
-// 			if (!pMe->m_FOBFlag)
-// 			{
-// 				if (pMe->m_WitchPag ==11)	//在收件箱界面才刷新
-// 				{
-// 					//返回收件箱
-// 					//ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"SMS_StoreMsgCb 新短信来 刷新界面");
-// 					testgps_GotoScreen( pMe, SCREENID_LONGSMS, 0 );
-// 				}
-// 			}
-// 			else
-// 			{
-// 				if (pMe->m_WitchPag != 13)		//已经在新短信界面就不需要在刷新
-// 				{
-// 					pMe->m_bDoLongSMS = 1;										//标志位
-// 					ISHELL_StartApplet(pMe->a.m_pIShell, pMe->a.clsID);
-// 				}
-// 			}
+			if (!pMe->m_FOBFlag)
+			{
+				if (pMe->m_WitchPag ==11)	//在收件箱界面才刷新
+				{
+					//返回收件箱
+					//ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"SMS_StoreMsgCb 新短信来 刷新界面");
+					testgps_GotoScreen( pMe, SCREENID_LONGSMS, 0 );
+				}
+			}
+			else
+			{
+				if (pMe->m_WitchPag != 13)		//已经在新短信界面就不需要在刷新
+				{
+					pMe->m_bDoLongSMS = 1;										//标志位
+					ISHELL_StartApplet(pMe->a.m_pIShell, pMe->a.clsID);
+				}
+			}
 		}	
 	}
 	return;

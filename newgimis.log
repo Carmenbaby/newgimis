@@ -141,31 +141,33 @@ OBJECT gm_sms.o
 	C:\adsv12\bin\armcc -c -DDYNAMIC_APP -cpu ARM7TDMI -apcs /ropi/interwork/norwpi -littleend -zo -fa -g -Ospace -O2 -I. -IC:\brewsdk\sdk\inc -I "C:\brewsdk\sdk\inc" -o gm_sms.o gm_sms.c
 "OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
 "gm_sms.c", line 345: Warning: C2870W: variable 'nLen' declared but not used
-"gm_sms.c", line 524: Warning: C2870W: variable 'nItemCount' declared but not used
-"gm_sms.c", line 524: Warning: C2870W: variable 'nMsgCount' declared but not used
-"gm_sms.c", line 674: Warning: C2870W: variable 'titleBuf' declared but not used
-"gm_sms.c", line 674: Warning: C2870W: variable 'aeContent_len' declared but not used
-"gm_sms.c", line 674: Warning: C2870W: variable 'aeContent' declared but not used
-"gm_sms.c", line 792: Warning: C2870W: variable 'nErr' declared but not used
-"gm_sms.c", line 928: Warning: C2870W: variable 'pTempFile' declared but not used
-"gm_sms.c", line 980: Warning: C2870W: variable 'fiInfo' declared but not used
-"gm_sms.c", line 1038: Warning: C2917W: no side effect in void context: 'i'
-"gm_sms.c", line 1044: Warning: C2207W: inventing 'extern int MP_AddMenuItemEx();'
-"gm_sms.c", line 1300: Warning: C2917W: no side effect in void context: 'unary *<expr>'
-"gm_sms.c", line 1318: Warning: C2211W: non-value return in non-void function
-"gm_sms.c", line 1565: Warning: C2207W: inventing 'extern int Delete_file();'
+"gm_sms.c", line 526: Warning: C2870W: variable 'nItemCount' declared but not used
+"gm_sms.c", line 526: Warning: C2870W: variable 'nMsgCount' declared but not used
+"gm_sms.c", line 679: Warning: C2870W: variable 'aeContent_len' declared but not used
+"gm_sms.c", line 679: Warning: C2870W: variable 'aeContent' declared but not used
+"gm_sms.c", line 679: Warning: C2870W: variable 'nIndex' declared but not used
+"gm_sms.c", line 679: Warning: C2870W: variable 'st' declared but not used
+"gm_sms.c", line 679: Warning: C2870W: variable 'uErr' declared but not used
+"gm_sms.c", line 797: Warning: C2870W: variable 'nErr' declared but not used
+"gm_sms.c", line 933: Warning: C2870W: variable 'pTempFile' declared but not used
+"gm_sms.c", line 985: Warning: C2870W: variable 'fiInfo' declared but not used
+"gm_sms.c", line 1043: Warning: C2917W: no side effect in void context: 'i'
+"gm_sms.c", line 1049: Warning: C2207W: inventing 'extern int MP_AddMenuItemEx();'
+"gm_sms.c", line 1305: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"gm_sms.c", line 1323: Warning: C2211W: non-value return in non-void function
+"gm_sms.c", line 1570: Warning: C2207W: inventing 'extern int Delete_file();'
 "gm_sms.c", line 18: Warning: C2874W: 'me' may be used before being set
-"gm_sms.c", line 1260: Warning: C2874W: 'pTempFile' may be used before being set
-"gm_sms.c", line 1829: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
-"gm_sms.c", line 1829: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
-gm_sms.c: 26 warnings, 0 errors, 0 serious errors
+"gm_sms.c", line 1265: Warning: C2874W: 'pTempFile' may be used before being set
+"gm_sms.c", line 1834: Warning: C2871W: static 'gimis_NotifyShellKey' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"gm_sms.c", line 1834: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+gm_sms.c: 28 warnings, 0 errors, 0 serious errors
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 OBJECT gm_task.o
@@ -302,101 +304,101 @@ OBJECT newgimis.o
 "OEMTTSExt_Gps.h", line 31: Warning: C2220W: Superfluous ',' in 'enum' declaration
 "newgimis.c", line 284: Warning: C2870W: variable 'pData' declared but not used
 "newgimis.c", line 1800: Warning: C2870W: variable 'me' declared but not used
-"newgimis.c", line 3810: Warning: C2809W: character sequence /* inside comment
-"newgimis.c", line 4669: Warning: C2870W: variable 'pszTok' declared but not used
-"newgimis.c", line 5372: Warning: C2870W: variable 'pszDelimiter' declared but not used
-"newgimis.c", line 6989: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 7401: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 7608: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 7989: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 8147: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 8262: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 8890: Warning: C2870W: variable 'szJWD' declared but not used
-"newgimis.c", line 8890: Warning: C2870W: variable 'szPost' declared but not used
-"newgimis.c", line 10220: Warning: C2870W: variable 'si_End' declared but not used
-"newgimis.c", line 10220: Warning: C2870W: variable 'si_Start' declared but not used
-"newgimis.c", line 11426: Warning: C2870W: variable 'si_End' declared but not used
-"newgimis.c", line 11426: Warning: C2870W: variable 'si_Start' declared but not used
-"newgimis.c", line 12462: Warning: C2870W: variable 'si_End' declared but not used
-"newgimis.c", line 12462: Warning: C2870W: variable 'si_Start' declared but not used
-"newgimis.c", line 13307: Warning: C2870W: variable 'si_ret' declared but not used
-"newgimis.c", line 13307: Warning: C2870W: variable 'dDate' declared but not used
-"newgimis.c", line 13443: Warning: C2211W: non-value return in non-void function
-"newgimis.c", line 13590: Warning: C2870W: variable 'si_ret' declared but not used
-"newgimis.c", line 14261: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 14907: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 15142: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 15362: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 15391: Warning: C2870W: variable 'sc_Count' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'si_Ret' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'nRead' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf_d' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf_T' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf1' declared but not used
-"newgimis.c", line 15391: Warning: C2870W: variable 'sBuf' declared but not used
-"newgimis.c", line 15632: Warning: C2870W: variable 'lStr_msg' declared but not used
-"newgimis.c", line 15632: Warning: C2870W: variable 'sc_Count' declared but not used
-"newgimis.c", line 15670: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 15684: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 15698: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 15733: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 15746: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 16089: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 16158: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 16246: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 16314: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 16403: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 17904: Warning: C2917W: no side effect in void context: 'unary *<expr>'
-"newgimis.c", line 17930: Warning: C2917W: no side effect in void context: 'unary *<expr>'
-"newgimis.c", line 17965: Warning: C2870W: variable 'temp' declared but not used
-"newgimis.c", line 17965: Warning: C2870W: variable 'nExpLen' declared but not used
-"newgimis.c", line 17965: Warning: C2870W: variable 'nLine' declared but not used
-"newgimis.c", line 18053: Warning: C2917W: no side effect in void context: 'unary *<expr>'
-"newgimis.c", line 18088: Warning: C2870W: variable 'temp' declared but not used
-"newgimis.c", line 18088: Warning: C2870W: variable 'nExpLen' declared but not used
-"newgimis.c", line 18088: Warning: C2870W: variable 'nLine' declared but not used
-"newgimis.c", line 18363: Warning: C2870W: variable 'i' declared but not used
-"newgimis.c", line 19947: Warning: C2870W: variable 'szFailure' declared but not used
-"newgimis.c", line 19986: Warning: C2870W: variable 'szFailure' declared but not used
-"newgimis.c", line 20025: Warning: C2870W: variable 'szFailure' declared but not used
-"newgimis.c", line 20070: Warning: C2870W: variable 'szFailure' declared but not used
-"newgimis.c", line 20788: Warning: C2870W: variable 'nTimes' declared but not used
-"newgimis.c", line 20788: Warning: C2870W: variable 'lInt_StartRun' declared but not used
-"newgimis.c", line 20846: Warning: C2870W: variable 'nErr' declared but not used
-"newgimis.c", line 21083: Warning: C2898W: unsigned comparison with 0 is always false: '<'
-"newgimis.c", line 21331: Warning: C2870W: variable 'pwa' declared but not used
-"newgimis.c", line 21413: Warning: C2870W: variable 'szFailure' declared but not used
-"newgimis.c", line 21878: Warning: C2870W: variable 'i' declared but not used
-"newgimis.c", line 22319: Warning: C2870W: variable 'wcText' declared but not used
-"newgimis.c", line 22482: Warning: C2870W: variable 'i' declared but not used
-"newgimis.c", line 21770: Warning: C2873W: implicit return in non-void function
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Start_qqsq' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Start_s' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_HtmlError' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_DisplayInfo' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'testgps_InitApplet' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_CloseSMS' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Close' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'SMS_StoreMsgCb' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_SaveSms' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'gm_SMSformat' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_trf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_ReleaseBuf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_CloseWeb' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_ReadBody' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_GotResp' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Status' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_DownLoad' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'SMS_CreateInterface' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Sms_Init' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
-"newgimis.c", line 22577: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
+"newgimis.c", line 3811: Warning: C2809W: character sequence /* inside comment
+"newgimis.c", line 4670: Warning: C2870W: variable 'pszTok' declared but not used
+"newgimis.c", line 5373: Warning: C2870W: variable 'pszDelimiter' declared but not used
+"newgimis.c", line 6990: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7402: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7609: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 7990: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 8148: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 8263: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 8891: Warning: C2870W: variable 'szJWD' declared but not used
+"newgimis.c", line 8891: Warning: C2870W: variable 'szPost' declared but not used
+"newgimis.c", line 10221: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 10221: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 11427: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 11427: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 12463: Warning: C2870W: variable 'si_End' declared but not used
+"newgimis.c", line 12463: Warning: C2870W: variable 'si_Start' declared but not used
+"newgimis.c", line 13308: Warning: C2870W: variable 'si_ret' declared but not used
+"newgimis.c", line 13308: Warning: C2870W: variable 'dDate' declared but not used
+"newgimis.c", line 13444: Warning: C2211W: non-value return in non-void function
+"newgimis.c", line 13591: Warning: C2870W: variable 'si_ret' declared but not used
+"newgimis.c", line 14262: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 14908: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15143: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15363: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 15392: Warning: C2870W: variable 'sc_Count' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'si_Ret' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'nRead' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'sBuf_d' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'sBuf_T' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'sBuf1' declared but not used
+"newgimis.c", line 15392: Warning: C2870W: variable 'sBuf' declared but not used
+"newgimis.c", line 15633: Warning: C2870W: variable 'lStr_msg' declared but not used
+"newgimis.c", line 15633: Warning: C2870W: variable 'sc_Count' declared but not used
+"newgimis.c", line 15671: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15685: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15699: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15734: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 15747: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 16090: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16159: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16247: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16315: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 16404: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 17905: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 17931: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 17966: Warning: C2870W: variable 'temp' declared but not used
+"newgimis.c", line 17966: Warning: C2870W: variable 'nExpLen' declared but not used
+"newgimis.c", line 17966: Warning: C2870W: variable 'nLine' declared but not used
+"newgimis.c", line 18054: Warning: C2917W: no side effect in void context: 'unary *<expr>'
+"newgimis.c", line 18089: Warning: C2870W: variable 'temp' declared but not used
+"newgimis.c", line 18089: Warning: C2870W: variable 'nExpLen' declared but not used
+"newgimis.c", line 18089: Warning: C2870W: variable 'nLine' declared but not used
+"newgimis.c", line 18364: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 19948: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 19987: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20026: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20071: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 20789: Warning: C2870W: variable 'nTimes' declared but not used
+"newgimis.c", line 20789: Warning: C2870W: variable 'lInt_StartRun' declared but not used
+"newgimis.c", line 20847: Warning: C2870W: variable 'nErr' declared but not used
+"newgimis.c", line 21084: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"newgimis.c", line 21332: Warning: C2870W: variable 'pwa' declared but not used
+"newgimis.c", line 21414: Warning: C2870W: variable 'szFailure' declared but not used
+"newgimis.c", line 21879: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 22320: Warning: C2870W: variable 'wcText' declared but not used
+"newgimis.c", line 22483: Warning: C2870W: variable 'i' declared but not used
+"newgimis.c", line 21771: Warning: C2873W: implicit return in non-void function
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_Start_qqsq' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_Start_s' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_HtmlError' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_DisplayInfo' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'testgps_InitApplet' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_CloseSMS' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_Close' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'SMS_StoreMsgCb' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_SaveSms' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'gm_SMSformat' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_trf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_ReleaseBuf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_CloseWeb' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_ReadBody' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_GotResp' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_Status' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_DownLoad' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'SMS_CreateInterface' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Sms_Init' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Socket_readPack_UDP' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'Socket_sendPack_UDP' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_Stop_yyxf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'uf_MonitorPost_yyxf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_Status_yyxf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_Header_yyxf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_ReadBody_yyxf' declared but not used
+"newgimis.c", line 22578: Warning: C2871W: static 'myiweb_GotResp_yyxf' declared but not used
 newgimis.c: 98 warnings, 0 errors, 0 serious errors
 ---------------------------------------------------------------
 ---------------------------------------------------------------
@@ -503,10 +505,10 @@ OBJECT SP_Track.o
 SP_Track.c: 18 warnings, 0 errors, 0 serious errors
 ---------------------------------------------------------------
 ---------------------------------------------------------------
-TARGET C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf
-	C:\adsv12\bin\armlink -o C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf -ropi -rwpi -entry 0x8000 AEEAppGen.o AEEModGen.o gm_Addr.o gm_FileUpload.o gm_photo.o gm_Qchat.o gm_record.o gm_sms.o gm_task.o gmTools.o gpsOneXTRA.o MD5.o More.o My_Function.o newgimis.o socket.o SP_CONFIG.o SP_GetGPSInfo.o SP_Menu.o SP_ShowGetGPSInfo.o SP_Track.o -first AEEMod_Load
+TARGET C:\test\20C4E2~1\NEWGIM~1.2ZX\newgimis.elf
+	C:\adsv12\bin\armlink -o C:\test\20C4E2~1\NEWGIM~1.2ZX\newgimis.elf -ropi -rwpi -entry 0x8000 AEEAppGen.o AEEModGen.o gm_Addr.o gm_FileUpload.o gm_photo.o gm_Qchat.o gm_record.o gm_sms.o gm_task.o gmTools.o gpsOneXTRA.o MD5.o More.o My_Function.o newgimis.o socket.o SP_CONFIG.o SP_GetGPSInfo.o SP_Menu.o SP_ShowGetGPSInfo.o SP_Track.o -first AEEMod_Load
 ---------------------------------------------------------------
-TARGET C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.mod
-	C:\adsv12\bin\fromelf  C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.elf -bin C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis.mod
+TARGET C:\test\20C4E2~1\NEWGIM~1.2ZX\newgimis.mod
+	C:\adsv12\bin\fromelf  C:\test\20C4E2~1\NEWGIM~1.2ZX\newgimis.elf -bin C:\test\20C4E2~1\NEWGIM~1.2ZX\newgimis.mod
 Warning: Q0115W: Deprecated command syntax will not be supported in future versions. Use -output to specify the output file.
 Finished: 0 information, 1 warning and 0 error messages.

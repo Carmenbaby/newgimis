@@ -530,7 +530,7 @@ void initModule_yyxf(newgimis *pMe)
 	MEMSET(pMe->sUrl_YYXF,0x00,250);
 	STRCAT(pMe->sUrl_YYXF,"http://");
 	STRCAT(pMe->sUrl_YYXF,pMe->sHttp_YYXF);
-	STRCAT(pMe->sUrl_YYXF,"&ver=3.1.2Beta");
+	STRCAT(pMe->sUrl_YYXF,"&ver=3.1.2ZXV8");
 	
 	if (STRLEN(pMe->MyMobileNo) > 0) 
 	{
