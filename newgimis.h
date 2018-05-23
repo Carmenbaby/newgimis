@@ -56,8 +56,8 @@ typedef enum {
 
 
 
-#define DEFAULT_VERSION				    "V3.1.2Beta"			// 版本号   
-#define D_VERSION				    "3.1.2Beta"			// 版本号 
+#define DEFAULT_VERSION				    "V3.1.2PAYY"			// 版本号   
+#define D_VERSION				    "3.1.2PAYY"			// 版本号 
 #define SPD_MOBILE_NO			"MOBILE_NO = "		// 手机号码	
 #define SPD_MOBILE_IMEI         "MOBILE_IMEI = "		// 手机imei
 #define DEFAULT_FIELD_SPLIT			";"					// 发送数据的不同字段字符串之间的分割符
@@ -369,9 +369,6 @@ typedef enum _ScreenId {
 		SCREENID_DETAIL2,
 		SCREENID_CONTENT,
 		SCREENID_NOTIFY,     //#后台模式任务提醒#
-		SCREENID_LONGSMS,
-		SCREENID_LONGSMS_CONTENT,
-		SCREENID_LONGSMS_Notify,
 		SCREENID_MAX  
 		
 		/* Insert new screens above this entry
@@ -416,7 +413,6 @@ typedef enum {
 		MAINMENU_ITEM_YJKQ,
 		MAINMENU_ITEM_PHOTO,
 		MAINMENU_ITEM_AUDIO,
-		MAINMENU_ITEM_LONGSMS,
 		MAINMENU_ITEM_MORE,
 		MAINMENU_ITEM_GPS,
 
@@ -471,14 +467,7 @@ typedef struct
     int rear;       //指向最后一个元素的下一结点  
 }QUEUE;
 
-//20180321
-typedef struct _SaveLongSMSName
-{
-	int ihasRead; //索引 1表示已读
-	char LongSMSName[64];//短信名字//不带路径//用于显示在界面上
-	char FileName[64];//文件名带路径
-}SaveLongSMSName;
-
+  
 
 
 /*-------------------------------------------------------------------
@@ -598,8 +587,6 @@ typedef struct _newgimis {
    void        *pScreenData;
    void        *pScreenData_gps;
    void        *pScreenData_Audio;
-   void        *pScreenData_LongSMS;
-   void        *pScreenData_LongSMS_Notity;
    void  *Old_ScreenData;  // 旧的页面指针 用于保存GPS页面的值
    void  *New_ScreenData; //新的页面指针 用于保存当前页面的指针 等旧的释放后重新给 currentHandler
    AEEHANDLER  currentHandler;
@@ -866,8 +853,7 @@ typedef struct _newgimis {
 
 	boolean m_FOBFlag ;//前后台的标志位  0-在前台运行  1-在后台运行
 	int m_WitchPag; //用来记录在哪个页面  0-主页面 1-在GPS的那个页面   4-更多的那个界面 12-更多界面?	21-弹出任务更新提醒界面
-											//16 任务列表SCREENID_TASKLIST 
-											//11 - 收件箱 12-短信详情 13-后台提醒界面
+											//16 任务列表SCREENID_TASKLIST
 
 
 	// /// 与照片有关
@@ -939,7 +925,7 @@ typedef struct _newgimis {
 	
 	int m_Flag_Key;//用来标记长按键触发进入  0 -- 不是长按键    1 -- 长按键进入
 	int m_Witch_Key; // 用来标记是触发什么功能的  2 -- 一键考勤  5 -- 发送照片  8 -- 发送视频   3 -- 重车  4 -- 空车  9 -- 状态 1   10 -状态 0   
-					 // 11- 一键打卡-关于厦门电力数据转发 //12 进入短信箱				
+					 // 11- 一键打卡-关于厦门电力数据转发				
 
 	int	m_PressSts;  //用来标记触发按键的按键状态  1 - 按下  0 - 没有按下	
 	boolean zuhe_loong ;// 用来标记是组合键或者是长按键  0 - 长按键  1 - 组合键
@@ -1231,17 +1217,7 @@ typedef struct _newgimis {
 	//---------------end
 
 	int m_evdo_Num;//  初始为0,累计到8次，一次5秒。40秒后也能够将信号m_enable_evdo变量至1
-
-	//-----------------------------------
-	uint16 m_LongSMS_Num;//目录中存在几份短信
-	uint16 m_LongSMS_uReadNum;//未读的数目
-	char titleBuf_LongSMS[256];//短信名	//用于保存最新一条名称
-	AECHAR	*aeContent_LongSMS;//短信内容
-	SaveLongSMSName *s_SaveLongSMSName;//收件箱列表
-	uint16 m_select_num;//选中的栏目号
-
-	uint8 m_bDoLongSMS;//后台启动标志位
-
+	
 } newgimis;
 
 
@@ -1320,9 +1296,6 @@ uint32 gimis_GetGPSPara(newgimis *pMe);
 
 // 判断有没有离线数据
 uint32 gimis_judgedata(newgimis *pMe);
-
-
-void uf_ImageNotify_copy(newgimis * pMe,IImage *pIImage, AEEImageInfo * pi, int nErr ) ;
 
 
 /*-------------------------------------------------------------------
@@ -1407,14 +1380,6 @@ extern void *testgps_SetScreenData_gps( newgimis *pMe, void *screenData );
 // 与视频有关 ///
 extern void *testgps_GetScreenData_Audio( newgimis *pMe );
 extern void *testgps_SetScreenData_Audio( newgimis *pMe, void *screenData );
-
-
-extern void *testgps_GetScreenData_LongSMS( newgimis *pMe );
-extern void *testgps_SetScreenData_LongSMS( newgimis *pMe, void *screenData );
-
-
-extern void *testgps_GetScreenData_LongSMS_Notity( newgimis *pMe );
-extern void *testgps_SetScreenData_LongSMS_Notity( newgimis *pMe, void *screenData );
 /////////////////
 ///////  与GPS有关的结束  //////////
 
@@ -1649,14 +1614,6 @@ int Show_Task_Content(newgimis *pnewgimis);
 
 //显示任务非流程详情界面
 int Show_Task_Detail2(newgimis *pnewgimis);
-
-//显示短信收件箱
-int Show_LongSMS(newgimis *pnewgimis);
-
-//显示信息详情
-int Show_LongSMS_Content(newgimis *pnewgimis);
-
-int Show_LongSMS_Notify(newgimis *pnewgimis);//恢复后台短信提醒界面
 
 // 按组合键退出程序
 boolean newgimis_ClosseApplet( newgimis *pMe );

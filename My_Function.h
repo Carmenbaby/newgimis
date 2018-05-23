@@ -63,9 +63,6 @@ void send_GPSData_7Day(newgimis *pMe);
 //创建存放离线gps数据的目录
 void init_gpsDir(newgimis *pMe);
 
-//创建存放短信数据的目录
-void init_smsDir(newgimis *pMe);
-
 //初始化的时候，检查gpsData文件
 void init_check_gpsData(newgimis *pMe);
 ///////////////////////////////////////////////////////////////////////////
@@ -85,8 +82,6 @@ int File_Get_OfflineData_Gps(newgimis *pMe, char **strData);
 int My_StrTOint(const char *str);
 void My_Log(IShell *pShell,char cWrtLog, uint16 *pIndex, const char *szFormat, ... );
 boolean MP_AddMenuItem(IMenuCtl * pMenu, uint16 wTextID, AECHAR * pText, uint16 wImageID, uint16 wItemID, uint32 dwData);
-
-boolean MP_AddMenuItemEx(IMenuCtl * pMenu, uint16 wTextID, AECHAR * pText, uint16 wImageID, uint16 wItemID, uint32 dwData);
 // 显示屏幕上显示当前输入法信息
 void yb_ShowInputMode(newgimis * pMe, AEETextInputMode eInputMode, int iMode);
 // 在屏幕上显示双字节信息

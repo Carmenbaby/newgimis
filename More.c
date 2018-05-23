@@ -351,6 +351,7 @@ boolean SamplePosDet_More_HandleEvent( newgimis *pMe, AEEEvent eCode,
 			si_Ret = juage_logfile(pMe);
 			if (!si_Ret)
 			{
+				//pMe->m_WitchPag = 12;
 				pMe->m_WitchPag = 25;// ËøÆÁ [3/16/2016 Administrator]
 				uf_AEPrint_Sending(pMe,FALSE);  // ·¢ËÍÖÐ ..
 				if ( FleUpd_HandleEvent(pMe,FLDUPD_EVT_START,0,0) )	 

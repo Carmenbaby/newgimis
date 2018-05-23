@@ -415,13 +415,6 @@ void init_check_gpsData(newgimis *pMe)
 		return;
 	}
 
-	if (pMe->iUDPPORT_YYXF != 0  && pMe->sUDPIP_YYXF !=NULL && pMe->iTCPPORT_YYXF != 0  && pMe->sTCPIP_YYXF !=NULL)
-	{
-		//平安医院不开启离线上传功能。
-		ud_RecLog(pMe->a.m_pIShell,1,&(pMe->nInd),"平安医院-关闭离线上传功能");
-		return;
-	}
-
 
 	//当平台设置离线文件上传天数为0时候 (;pd )关闭功能。//12 18点各做一次
 	if ( (0 != pMe->nKeepDays) && ( (12 == dDate.wHour && 0 == dDate.wMinute) || (18 == dDate.wHour && 0 == dDate.wMinute) )  )
@@ -705,13 +698,13 @@ int Upload_Init_7Day(newgimis *pMe)
 
 	if (pMe->MyMobileNo != NULL)  // 有电话号码的时候自己加电话号码 没有的时候
 	{
-		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2Beta&tel=%s&imsi=%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID);
+		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2PAYY&tel=%s&imsi=%s",pMe->strCenterIp,pMe->MyMobileNo,pMe->szMobileID);
 		//SPRINTF(pMe->pURL_7Day,"http://61.131.1.153:9810/partition/brewGPS/BrewServlet?act=httpdec&ver=3.0.5std");
-		//http://cn.richtalk.cn:80/brewGPS/BrewServlet?act=httpdec&ver=3.1.2Beta&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM0;TT20160720112129&tel=13348552109&imsi=460030948567805
+		//http://cn.richtalk.cn:80/brewGPS/BrewServlet?act=httpdec&ver=3.1.2PAYY&pp=LO0x100004;LA0x100004;VV0;EP0;KS0;PM0;TT20160720112129&tel=13348552109&imsi=460030948567805
 	}
 	else
 	{
-		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2Beta&imsi=%s",pMe->strCenterIp,pMe->szMobileID);
+		SPRINTF(pMe->pURL_7Day,"http://%s&ver=3.1.2PAYY&imsi=%s",pMe->strCenterIp,pMe->szMobileID);
 	}
 	
 	ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"Upload_Init_7Day in url=%s",pMe->pURL_7Day);
@@ -945,7 +938,6 @@ void Upload_ReadBody_7Day(newgimis *pMe)
 		{
 		case 0:
 			{
-
 			}
 			break;	
 		case 1:
@@ -1025,10 +1017,6 @@ void Delete_file(newgimis *pMe,char* file_name)
 		{
 			ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"IFILEMGR_Remove %s success",file_name); 
 		}
-		else
-		{
-			ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),"IFILEMGR_Remove %s fail",file_name); 
-		}
 	}
 
 	if (pFileMgr)
@@ -1101,29 +1089,6 @@ void init_gpsDir(newgimis *pMe)
 		}
 	}
 
-	if (pFileMgr)
-	{
-		IFILEMGR_Release(pFileMgr);
-		pFileMgr = NULL;
-	}
-}
-
-//创建存放短信数据的目录
-void init_smsDir(newgimis *pMe)
-{
-	IFileMgr* pFileMgr = NULL; 
-
-	if ( ISHELL_CreateInstance(pMe->a.m_pIShell, AEECLSID_FILEMGR, (void**)(&pFileMgr)) == SUCCESS )
-	{
-		if ( IFILEMGR_MkDir(pFileMgr, AEEFS_SMSDATA_DIR) == SUCCESS ) 
-		{
-			ud_RecLog(pMe->a.m_pIShell,1,&(pMe->nInd),"init_smsDir success"); 
-		}else
-		{
-			ud_RecLog(pMe->a.m_pIShell,1,&(pMe->nInd),"init_smsDir fail"); 
-		}
-	}
-	
 	if (pFileMgr)
 	{
 		IFILEMGR_Release(pFileMgr);
@@ -1247,26 +1212,6 @@ boolean MP_AddMenuItem(IMenuCtl * pMenu, uint16 wTextID, AECHAR * pText, uint16 
 
    // Add the item to the menu control
    return IMENUCTL_AddItemEx( pMenu, &ai );   //如果 pai->pImage 为 NULL 并且指定了 pai->wImage 函数将尝试从指定资源加载图像如果图像加载失败函数将返回 FALSE
-}
-
-
-boolean MP_AddMenuItemEx(IMenuCtl * pMenu, uint16 wTextID, AECHAR * pText, uint16 wImageID, uint16 wItemID, uint32 dwData)
-{
-	CtlAddItem  ai;
-	
-	// Fill in the CtlAddItem structure values
-	ai.pText = pText;
-	ai.pImage = NULL;
-	ai.pszResImage = NEWGIMIS_RES_FILE;
-	ai.pszResText = NULL;
-	ai.wText = wTextID;
-	ai.wFont = AEE_FONT_NORMAL;
-	ai.wImage = wImageID;
-	ai.wItemID = wItemID;
-	ai.dwData = dwData;
-	
-	// Add the item to the menu control
-	return IMENUCTL_AddItemEx( pMenu, &ai );   //如果 pai->pImage 为 NULL 并且指定了 pai->wImage 函数将尝试从指定资源加载图像如果图像加载失败函数将返回 FALSE
 }
 
 

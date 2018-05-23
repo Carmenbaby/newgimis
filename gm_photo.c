@@ -1322,28 +1322,19 @@ boolean SamplePosDet_SendPhoto_HandleEvent( newgimis *pMe, AEEEvent eCode,
 					 
 					 if ( STRLEN(pMe->m_photo[pMe->m_i_photo-1].photoname) > 0 ) 
 					{
-							uf_RecLog(pMe,"Find Send photo" );
-							STRCPY(pMe->sFileName,pMe->m_photo[pMe->m_i_photo-1].photoname);
-							
-							if (STRCMP(pMe->sMobileType,"01") == 0 || STRCMP(pMe->sMobileType,"15") == 0 /*|| (STRCMP(pMe->sMobileType,"02") == 0)*/)
-							{
-							//	ISHELL_SetTimer(pMe->a.m_pIShell, 1000, (PFNNOTIFY)Load_Image_fun, pMe);
+						uf_RecLog(pMe,"Find Send photo" );
+						STRCPY(pMe->sFileName,pMe->m_photo[pMe->m_i_photo-1].photoname);
+						pMe->pi = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
+						if (STRCMP(pMe->sMobileType,"01") == 0 || STRCMP(pMe->sMobileType,"15") == 0 /*|| (STRCMP(pMe->sMobileType,"02") == 0)*/)
+						{
+							ISHELL_SetTimer(pMe->a.m_pIShell, 1000, (PFNNOTIFY)Load_Image_fun, pMe);
+				//			pMe->pi_copy = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);							
+						}
 
-								Load_Image_fun(pMe);
-								if (pMe->pi_copy) 		
-								{
-									IImage_Notify(pMe->pi_copy, (PFNIMAGEINFO)uf_ImageNotify_copy,pMe);  //注册回调
-								}
-								return TRUE;
-								//			pMe->pi_copy = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
-							}
-							
-							pMe->pi = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
-
-							if (pMe->pi) 		
-							{
-								IImage_Notify(pMe->pi, (PFNIMAGEINFO)uf_ImageNotify,pMe);  //注册回调
-							}
+						if (pMe->pi) 		
+						{
+							IImage_Notify(pMe->pi, (PFNIMAGEINFO)uf_ImageNotify,pMe);  //注册回调
+						}
 					}
 				 }
 				 return TRUE;
@@ -1399,21 +1390,12 @@ boolean SamplePosDet_SendPhoto_HandleEvent( newgimis *pMe, AEEEvent eCode,
 					 {
 							uf_RecLog(pMe,"Find Send photo" );
 							STRCPY(pMe->sFileName,pMe->m_photo[pMe->m_i_photo-1].photoname);
-							
+							pMe->pi = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
 							if (STRCMP(pMe->sMobileType,"01") == 0 || STRCMP(pMe->sMobileType,"15") == 0 /*|| (STRCMP(pMe->sMobileType,"02") == 0)*/)
 							{
-							//	ISHELL_SetTimer(pMe->a.m_pIShell, 1000, (PFNNOTIFY)Load_Image_fun, pMe);
-
-								Load_Image_fun(pMe);
-								if (pMe->pi_copy) 		
-								{
-									IImage_Notify(pMe->pi_copy, (PFNIMAGEINFO)uf_ImageNotify_copy,pMe);  //注册回调
-								}
-								return TRUE;
+								ISHELL_SetTimer(pMe->a.m_pIShell, 1000, (PFNNOTIFY)Load_Image_fun, pMe);
 				//			pMe->pi_copy = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
 							}
-
-							pMe->pi = ISHELL_LoadImage(pMe->a.m_pIShell, pMe->sFileName);
 							if (pMe->pi) 		
 							{
 								IImage_Notify(pMe->pi, (PFNIMAGEINFO)uf_ImageNotify,pMe);  //注册回调
@@ -2132,15 +2114,25 @@ boolean SamplePosDet_SendAudio_HandleEvent( newgimis *pMe, AEEEvent eCode,
 {
 	AEERect rRect;
 	CtlAddItem rMenuItem;
+//	AECHAR PP[20];
+	// cUsePhoto 启用 视频和图片功能
+	/*
+	0 : 不启用照片和视频上传功能  
+	1 ：启用照片 
+	2 ：启用照片一键上传 
+	4 : 发送视频，不发送照片 
+	5： 发送视频，发送照片 
+	7:  发送视频，照片一键上传 
+	*/
 
-	int  m_nFontHeight = 0;
-	AECHAR c_Tmp[512];
-	char *sc_tmp = NULL;
-	int si_tmp = 0;
-
-	boolean bHandled = FALSE;
-	IMenuCtl *pMenuCtl = testgps_GetScreenData_Audio( pMe );
-	IMenuCtl *pMenuCtl_N = testgps_GetScreenData( pMe );
+   int  m_nFontHeight = 0;
+   AECHAR c_Tmp[512];
+   char *sc_tmp = NULL;
+   int si_tmp = 0;
+	
+   boolean bHandled = FALSE;
+   IMenuCtl *pMenuCtl = testgps_GetScreenData_Audio( pMe );
+   IMenuCtl *pMenuCtl_N = testgps_GetScreenData( pMe );
 
  //  ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd), "进来视频 1");
 	if(pMe->m_bSendPF == TRUE )//用来标记是否正在发送图片的标志位 TRUE -- 表示正在发送状态  FALSE -- 表示空闲
@@ -2532,9 +2524,6 @@ boolean SamplePosDet_SendAudio_HandleEvent( newgimis *pMe, AEEEvent eCode,
    }
    return bHandled;
 }
-
-
-
 
 
 

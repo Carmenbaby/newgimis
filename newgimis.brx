@@ -112,39 +112,6 @@
 	<String Id="41" Name="IDS_FORWARD_DATA">
 		<Text>一键打卡</Text>
 	</String>
-	<String Id="42" Name="IDS_LONGSMS_TITILE">
-		<Text>              短信收件箱</Text>
-	</String>
-	<String Id="43" Name="IDS_OPEN">
-		<Text>查看</Text>
-	</String>
-	<String Id="44" Name="IDS_SMS_CONTENT">
-		<Text>短信内容</Text>
-	</String>
-	<String Id="45" Name="IDS_LONGSMS_NOTIFY">
-		<Text>查看短信</Text>
-	</String>
-	<String Id="46" Name="IDS_LONGSMS">
-		<Text>短信收件箱</Text>
-	</String>
-	<String Id="47" Name="IDS_LONGSMS_TITLE_1">
-		<Text>您有新的信息请查收！</Text>
-	</String>
-	<String Id="48" Name="IDS_LONGSMS_TITLE_2">
-		<Text>操作提示：</Text>
-	</String>
-	<String Id="49" Name="IDS_LONGSMS_TITLE_3">
-		<Text>1、按[中间键]查看信息。</Text>
-	</String>
-	<String Id="50" Name="IDS_LONGSMS_TITLE_4">
-		<Text>2、若此界面退出，可在主</Text>
-	</String>
-	<String Id="51" Name="IDS_LONGSMS_TITLE_5">
-		<Text>界面长按[0]键进入收件箱</Text>
-	</String>
-	<String Id="52" Name="IDS_LONGSMS_TITLE_6">
-		<Text>查看更多短信。</Text>
-	</String>
 	<String Id="100" Name="IDS_UNKNOWN">
 		<Text>未知错误！</Text>
 	</String>

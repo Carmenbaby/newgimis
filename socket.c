@@ -346,7 +346,7 @@ void Socket_ReadCB(void *p)
 
 				FREE(pMe->m_DataBuf);//包头不对，释放资源。
 
-				if (si_Ret == 2)	//先释放databuf后发
+				if (si_Ret == 2 || si_Ret == 1)	//先释放databuf后发
 				{
 					//发回应包
 					Socket_Write_Answer_CB(pMe);
@@ -530,7 +530,7 @@ void initModule_yyxf(newgimis *pMe)
 	MEMSET(pMe->sUrl_YYXF,0x00,250);
 	STRCAT(pMe->sUrl_YYXF,"http://");
 	STRCAT(pMe->sUrl_YYXF,pMe->sHttp_YYXF);
-	STRCAT(pMe->sUrl_YYXF,"&ver=3.1.2Beta");
+	STRCAT(pMe->sUrl_YYXF,"&ver=3.1.2PAYY");
 	
 	if (STRLEN(pMe->MyMobileNo) > 0) 
 	{
@@ -937,7 +937,7 @@ int resolvePack( newgimis *pMe,char *pString)
 			MEMSET(sbuf, 0x00 ,si_Count+1);
 			STRNCPY(sbuf,sc_Start+3,si_Count);
 
-			ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),";SM = sbuf  = %s",sbuf); 
+			//ud_RecLog(pMe->a.m_pIShell,pMe->cWrtLog,&(pMe->nInd),";SM = sbuf  = %s",sbuf); 
 			
 			pMe->aeContent_yyxf = (AECHAR *)MALLOC(si_Count);
 			UTF8_TO_WSTR((byte *)sbuf,si_Count,pMe->aeContent_yyxf,si_Count);

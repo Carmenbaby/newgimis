@@ -106,22 +106,6 @@ static void Sms_Close(cSms *me);
 static void Sms_CloseSMS(cSms *me);
 
 
-void load_LongSMS_Num(newgimis* pMe);
-void load_LongSMS_Data(newgimis* pMe);
-void write_LongSMS_Data(newgimis *pMe,AECHAR* aeContent,int aeContent_len,char *titleBuf);
-
-//收件箱
-boolean SamplePosDet_LongSMS_HandleEvent( newgimis *pMe, AEEEvent eCode,
-                                                 uint16 wParam, uint32 dwParam );
-//信息详情
-boolean SamplePosDet_LongSMS_Content_HandleEvent( newgimis *pMe, AEEEvent eCode, uint16 wParam, uint32 dwParam );
-
-//后台提示
-boolean SamplePosDet_LongSMSNotify_HandleEvent( newgimis *pMe, AEEEvent eCode, uint16 wParam, uint32 dwParam );
-
-unsigned int Curl_rand(newgimis *pMe);//用于产生7位随机码
-
-void LongSMS_hasread(newgimis *pMe); //点击，改名，表示已读
 
 #endif /* #ifndef GM_SMS_H */
 

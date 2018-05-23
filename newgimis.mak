@@ -32,7 +32,7 @@
 #============================================================================
 BREW_HOME      =$(BREWDIR)
 ARM_HOME       =$(ARMHOME)
-TARGET         =C:\test\201805~1.2BE\NEWGIM~1.2ST\newgimis
+TARGET         =C:\test\201804~1\NEWGIM~1.2PA\newgimis
 OBJS           =AEEAppGen.o AEEModGen.o gm_Addr.o gm_FileUpload.o gm_photo.o gm_Qchat.o gm_record.o gm_sms.o gm_task.o gmTools.o gpsOneXTRA.o MD5.o More.o My_Function.o newgimis.o socket.o SP_CONFIG.o SP_GetGPSInfo.o SP_Menu.o SP_ShowGetGPSInfo.o SP_Track.o 
 APP_INCLUDES   = -I "$(BREWDIR)\inc"
 
